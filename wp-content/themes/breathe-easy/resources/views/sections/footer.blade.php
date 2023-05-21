@@ -1,3 +1,5 @@
 <footer class="content-info">
-  @php(dynamic_sidebar('sidebar-footer'))
+  <div class="container mx-auto">
+    
+  </div>
 </footer>

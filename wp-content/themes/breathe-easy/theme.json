@@ -30,12 +30,12 @@
         {
           "name": "Black",
           "slug": "black",
-          "color": "#000"
+          "color": "#000000"
         },
         {
           "name": "White",
           "slug": "white",
-          "color": "#fff"
+          "color": "#ffffff"
         },
         {
           "name": "Slate 50",
@@ -1136,6 +1136,31 @@
           "name": "Rose 900",
           "slug": "rose-900",
           "color": "#881337"
+        },
+        {
+          "name": "Blue-main",
+          "slug": "blue-main",
+          "color": "#154487"
+        },
+        {
+          "name": "Blue-second",
+          "slug": "blue-second",
+          "color": "#1481c3"
+        },
+        {
+          "name": "Blue-light",
+          "slug": "blue-light",
+          "color": "#59bcee"
+        },
+        {
+          "name": "Grey",
+          "slug": "grey",
+          "color": "#d9d9d9"
+        },
+        {
+          "name": "Grey-dark",
+          "slug": "grey-dark",
+          "color": "#212121"
         }
       ]
     },
