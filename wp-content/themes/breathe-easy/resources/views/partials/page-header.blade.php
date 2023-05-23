@@ -9,8 +9,10 @@
         <h1 class="text-[110px] font-bold leading-[1] mb-16">Aircon Cleaning Specialists</h1>
         <h3 class="text-[40px] font-light leading-[1.1] mb-16">Industry-Leading practices & uncompromising integrity,unrivalled customer service, and total customer satisfaction.</h3>
       </div>
-      <div class="hero-more-wrap col-span-3">
-        <a href="/">More</a>
+      <div class="grid hero-more-wrap col-span-2 place-items-end">
+        <span class="cursor-pointer mb-16">
+          <i class="fa-regular fa-circle-arrow-down text-[70px] text-white"></i>
+        </span>
       </div>
     </div>
     {{-- <div class="hero-bg-shape"></div> --}}
