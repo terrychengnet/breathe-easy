@@ -3,15 +3,7 @@
 </a>
 
 @include('sections.header')
-
-  <main id="main" class="main">
+  <main id="main" class="main relative">
     @yield('content')
   </main>
-
-  <!-- @hasSection('sidebar')
-    <aside class="sidebar">
-      @yield('sidebar')
-    </aside>
-  @endif -->
-
 @include('sections.footer')

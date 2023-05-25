@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link href="<?= get_template_directory_uri()?>/resources/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="<?= get_template_directory_uri()?>/resources/fonts/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="<?= get_template_directory_uri()?>/resources/fonts/fontawesome/css/solid.css" rel="stylesheet">
+    <!-- End Font Awesome -->
+
     <?php wp_head(); ?>
   </head>
 

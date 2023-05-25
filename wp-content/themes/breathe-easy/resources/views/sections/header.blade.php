@@ -1,4 +1,4 @@
-<header class="header h-[85px] bg-grey">
+<header class="header fixed z-50 top-0 left-0 right-0 h-[85px] bg-white/20">
   <div class="container h-[100%] flex justify-between items-center">
       <a class="header-logo justify-self-start" href="{{ home_url('/') }}">
         <img class="header-logo-img w-[270px]" src="{{ get_template_directory_uri() }}/resources/images/Header-logo.svg"/>
