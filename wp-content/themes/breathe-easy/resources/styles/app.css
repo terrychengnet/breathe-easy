@@ -4,79 +4,105 @@
 
 /* Fonts */
 @layer base {
-    /* Regular */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 400;
-        src: url("../fonts/Roboto-Regular.ttf") format("opentype");
-    }
-    /* Light */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 300;
-        src: url("../fonts/Roboto-Light.ttf") format("opentype");
-    }
-    /* Light Italic */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 300;
-        font-style: italic;
-        src: url("../fonts/Roboto-LightItalic.ttf") format("opentype");
-    }
-    /* Medium */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 500;
-        src: url("../fonts/Roboto-Medium.ttf") format("opentype");
-    }
-    /* Medium Italic */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 500;
-        font-style: italic;
-        src: url("../fonts/Roboto-MediumItalic.ttf") format("opentype");
-    }
-    /* Bold */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 700;
-        src: url("../fonts/Roboto-Bold.ttf") format("opentype");
-    }
-    /* Bold Italic */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 700;
-        font-style: italic;
-        src: url("../fonts/Roboto-BoldItalic.ttf") format("opentype");
-    }
-    /* Black */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 900;
-        src: url("../fonts/Roboto-Black.ttf") format("opentype");
-    }
-    /* Black */
-    @font-face {
-        font-family: Roboto;
-        font-weight: 900;
-        font-style: italic;
-        src: url("../fonts/Roboto-BlackItalic.ttf") format("opentype");
-    }
+  /* roboto-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-300italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-900italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
-    body {
-        font-family: Roboto;
-    }
+  body {
+    font-family: Roboto, sans-serif;
+  }
 }
 
 @layer components {
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
 
-    .btn {
-        &.btn-contact {
-            @apply
-            inline-block 
+  .btn {
+    &.btn-contact {
+      @apply inline-block 
             text-[20px] 
             uppercase 
             font-roboto 
@@ -86,29 +112,57 @@
             px-8 
             py-[15px] 
             rounded-[10px];
-        }
     }
+  }
 
-    section {
-        @apply 
-        py-[40px];
-    }
+  section {
+    @apply py-[40px];
+  }
 
-    .section-title {
-        @apply 
-        block 
+  .section-title {
+    @apply block 
         text-[#b0b0b0] 
         text-[75px] 
         text-center 
         my-[40px] 
         leading-[1];
+  }
+
+  nav.nav-primary .menu-item {
+    @apply mr-[50px];
+  }
+
+  nav.nav-primary .menu-item a {
+    @apply text-white text-[16px] font-black uppercase ease-in duration-100 hover:text-blue-main hover:ease-in;
+  }
+
+  .footer-top {
+    grid-template-columns: 3fr 3fr 4fr 4fr;
+  }
+
+  .footer-cols {
+    h3 {
+      @apply text-2xl font-bold;
     }
 
-    nav.nav-primary .menu-item {
-        @apply mr-[50px];
+    &.working-hours {
+      @apply text-3xl font-bold;
+
+      i {
+        @apply text-4xl;
+      }
     }
 
-    nav.nav-primary .menu-item a {
-        @apply text-white text-[16px] font-black uppercase ease-in duration-100 hover:text-blue-main hover:ease-in;
+    .contact-us-wrapper {
+      @apply text-3xl font-bold;
+
+      i {
+        @apply text-blue-second mr-3 w-8;
+      }
     }
+  }
+
+  .footer-widget ul {
+    @apply text-xl list-disc list-inside;
+  }
 }
