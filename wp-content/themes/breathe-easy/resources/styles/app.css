@@ -137,6 +137,7 @@
   }
 
   /* Glass CSS START */
+  /* Footer START*/
   .footer-cols {
     h3 {
       @apply text-2xl font-bold;
@@ -159,12 +160,23 @@
     }
   }
 
-  .footer-widget ul {
-    @apply text-xl list-disc list-inside;
+  .footer-widget {
+    .widget.widget_nav_menu {
+      @apply mt-10;
+    }
+
+    ul {
+      @apply text-xl list-disc list-inside;
+    }
 
     li {
       @apply mt-2;
     }
   }
+
+  ul#menu-footer-menu li {
+    @apply inline font-bold mr-2 last:mr-0;
+  }
+  /* Footer END*/
   /* Glass CSS END */
 }

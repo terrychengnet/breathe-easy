@@ -11,7 +11,7 @@
 |
 */
 
-if (! file_exists($composer = __DIR__.'/vendor/autoload.php')) {
+if (!file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
 }
 
@@ -56,7 +56,7 @@ try {
 
 collect(['setup', 'filters'])
     ->each(function ($file) {
-        if (! locate_template($file = "app/{$file}.php", true, true)) {
+        if (!locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(
                 /* translators: %s is replaced with the relative file path */
                 sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
@@ -77,3 +77,51 @@ collect(['setup', 'filters'])
 */
 
 add_theme_support('sage');
+
+function breathe_easy_register_widget_areas()
+{
+    register_sidebar(
+        array(
+            'name' => __('Footer Widget 1', 'breathe_easy'),
+            'id' => 'footer-widget-1',
+            'description' => __('Widget area for the footer.', 'breathe_easy'),
+            'before_widget' => '<div class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name' => __('Footer Widget 2', 'breathe_easy'),
+            'id' => 'footer-widget-2',
+            'description' => __('Widget area for the footer.', 'breathe_easy'),
+            'before_widget' => '<div class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action('widgets_init', 'breathe_easy_register_widget_areas');
+
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page(
+        array(
+            'page_title' => 'Breathe Easy Setting',
+            'menu_title' => 'Breathe Easy Setting',
+            'menu_slug' => 'breathe-easy-setting',
+            'capability' => 'manage_options',
+            'position' => 30,
+            'update_button' => 'Save',
+            'updated_message' => 'Options saved successfully.',
+        )
+    );
+}
+
+register_nav_menus(
+    array(
+        'footer_navigation' => 'Footer Navigation',
+    )
+);
