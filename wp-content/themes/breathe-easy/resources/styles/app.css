@@ -137,10 +137,6 @@
   }
 
   /* Glass CSS START */
-  .footer-top {
-    grid-template-columns: 3fr 3fr 4fr 4fr;
-  }
-
   .footer-cols {
     h3 {
       @apply text-2xl font-bold;
@@ -150,7 +146,7 @@
       @apply text-3xl font-bold;
 
       i {
-        @apply text-4xl;
+        @apply text-4xl mr-2;
       }
     }
 
