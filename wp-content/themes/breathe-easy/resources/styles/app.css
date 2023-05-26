@@ -136,6 +136,7 @@
     @apply text-white text-[16px] font-black uppercase ease-in duration-100 hover:text-blue-main hover:ease-in;
   }
 
+  /* Glass CSS START */
   .footer-top {
     grid-template-columns: 3fr 3fr 4fr 4fr;
   }
@@ -164,5 +165,10 @@
 
   .footer-widget ul {
     @apply text-xl list-disc list-inside;
+
+    li {
+      @apply mt-2;
+    }
   }
+  /* Glass CSS END */
 }

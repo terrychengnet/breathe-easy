@@ -37,7 +37,7 @@
             </div>
 
             <div class="footer-cols contact-us">
-                <div class="contact-us-wrapper bg-blue-main p-6 rounded-2xl grid gap-y-1">
+                <div class="contact-us-wrapper bg-blue-main p-8 rounded-2xl grid gap-y-1">
                     <h3 class="mb-8">Contact Us</h3>
                     <div><i class="fa-solid fa-phone-flip mr-3 w-8"></i><span>+852 9887 7273</span></div>
                     <div><i class="fa-brands fa-whatsapp mr-3 w-8"></i><span>+852 9887 7273</span></div>
