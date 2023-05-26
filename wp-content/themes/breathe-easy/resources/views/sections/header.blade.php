@@ -9,7 +9,7 @@
         </nav>
       @endif
       <div class="header-contact">
-        <a class="inline-block text-[20px] uppercase font-roboto font-bold text-white bg-blue-second color-white px-8 py-3 rounded-[10px]" href="/contact-us">Contact Us</a>
+        <a class="btn btn-contact" href="/contact-us">Contact Us</a>
       </div>
   </div>
 </header>
