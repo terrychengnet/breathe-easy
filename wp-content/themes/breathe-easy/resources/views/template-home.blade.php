@@ -11,18 +11,42 @@
       <div class="container">
         <h1 class="section-title">Our Service</h1>
         <div class="timeline-body">
-          <div class="timeline__item  grid grid-cols-12 gap-1">
-            <div class="timeline__content-wrap col-span-5">
+          {{--  --}}
+          <div class="timeline__item flex grid grid-cols-12 gap-1 mb-[60px]">
+            <div class="timeline__content-wrap col-span-5 pt-[40px]">
               <h2 class="section-heading mb-[25px]">100% Safe Cleaning Products</h2>
               <p class="description  mb-[25px]">We use non-toxic products which are perfectly safe and pose zero risk to children, pregnant women, the elderly or pets.</p>
               <a class="btn" href=#>Read More</a>
             </div>
-            <div class="timeline__img-wrap realtive col-start-8 col-span-5">
-              <div class="timeline__img">
-                <img src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
+            <div class="timeline__img-wrap relative col-start-8 col-span-5">
+              <div class="timeline__img flex relative z-10 place-content-center rounded-[40px] aspect-square overflow-hidden">
+                <span class="timeline__num absolute z-10 text-white font-bold text-[200px] self-center">1</span>
+                <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
+                <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
               </div>
+              {{-- <div class="timeline__img-shade absolute bottom-0 bg-grey rounded-[40px] mx-[40px] aspect-square"></div> --}}
+              <div class="timeline__img-shade absolute m-auto left-0 right-0 bottom-[-40px] h-full w-[calc(100%-80px)] bg-grey rounded-[40px]"></div>
             </div>
           </div>
+          {{--  --}}
+           {{--  --}}
+           <div class="timeline__item flex grid grid-cols-12 gap-1">
+            <div class="timeline__content-wrap col-span-5 pt-[40px] col-start-8 order-last">
+              <h2 class="section-heading mb-[25px]">Extend Aircon Lifespan & Lower Electricity Bills</h2>
+              <p class="description  mb-[25px]">Our step-by-step methodology prioritizes the integrity of your AC units. With your AC cleaned, your AC will be cooler and your electricity bills will be lower.</p>
+              <a class="btn" href=#>Read More</a>
+            </div>
+            <div class="timeline__img-wrap relative col-span-5">
+              <div class="timeline__img flex relative z-10 place-content-center rounded-[40px] aspect-square overflow-hidden">
+                <span class="timeline__num absolute z-10 text-white font-bold text-[200px] self-center">1</span>
+                <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
+                <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
+              </div>
+              {{-- <div class="timeline__img-shade absolute bottom-0 bg-grey rounded-[40px] mx-[40px] aspect-square"></div> --}}
+              <div class="timeline__img-shade absolute m-auto left-0 right-0 bottom-[-40px] h-full w-[calc(100%-80px)] bg-grey rounded-[40px]"></div>
+            </div>
+          </div>
+          {{--  --}}
         </div>
       </div>
     </section>
