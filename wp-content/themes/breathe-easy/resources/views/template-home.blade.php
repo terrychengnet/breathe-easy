@@ -18,14 +18,13 @@
               <p class="description  mb-[25px]">We use non-toxic products which are perfectly safe and pose zero risk to children, pregnant women, the elderly or pets.</p>
               <a class="btn" href=#>Read More</a>
             </div>
-            <div class="timeline__img-wrap relative col-start-8 col-span-5">
+            <div class="timeline__img-wrap block relative col-start-8 col-span-5">
               <div class="timeline__img flex relative z-10 place-content-center rounded-[40px] aspect-square overflow-hidden">
                 <span class="timeline__num absolute z-10 text-white font-bold text-[200px] self-center">1</span>
                 <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
                 <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
               </div>
-              {{-- <div class="timeline__img-shade absolute bottom-0 bg-grey rounded-[40px] mx-[40px] aspect-square"></div> --}}
-              <div class="timeline__img-shade absolute m-auto left-0 right-0 bottom-[-40px] h-full w-[calc(100%-80px)] bg-grey rounded-[40px]"></div>
+              <div class="timeline__img-shade absolute left-0 right-0 top-[80px] aspect-square bg-grey rounded-[40px] m-[40px]"></div>
             </div>
           </div>
           {{--  --}}
@@ -42,8 +41,7 @@
                 <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
                 <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
               </div>
-              {{-- <div class="timeline__img-shade absolute bottom-0 bg-grey rounded-[40px] mx-[40px] aspect-square"></div> --}}
-              <div class="timeline__img-shade absolute m-auto left-0 right-0 bottom-[-40px] h-full w-[calc(100%-80px)] bg-grey rounded-[40px]"></div>
+              <div class="timeline__img-shade absolute left-0 right-0 top-[80px] aspect-square bg-grey rounded-[40px] m-[40px]"></div>
             </div>
           </div>
           {{--  --}}
