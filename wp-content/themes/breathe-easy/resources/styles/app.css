@@ -76,11 +76,13 @@
     .btn {
         @apply
         inline-block 
-        text-[20px] 
+        text-[15px] 
+        md:text-[20px]
         uppercase 
         font-roboto 
         font-bold 
         text-white 
+        text-center
         px-9 
         py-[15px] 
         rounded-[40px] 
@@ -92,9 +94,11 @@
 
         &.btn-contact {
             @apply
+            w-[160px]
+            md:w-[188px] 
             px-8 
             py-[15px] 
-            rounded-[10px]
+            /* rounded-[10px] */
             bg-blue-second
             hover:bg-blue-main;
         }
@@ -134,9 +138,27 @@
         &.scroll {
             @apply
             bg-blue-main;
+
+            .header-logo {
+                @apply
+                bg-[url('/images/header-logo-alt.svg')];
+            }
+
+            .nav-primary .menu-item a {
+                @apply
+                hover:text-blue-light; 
+            }
+        }
+
+        .header-logo {
+            @apply
+            bg-[url('/images/header-logo.svg')]
+            bg-cover
+            bg-no-repeat
+            bg-center;
         }
     }
-
+    
     nav.nav-primary .menu-item {
         @apply mr-[50px];
     }
