@@ -117,7 +117,8 @@
 
     .section-heading {
         @apply
-        text-[65px]
+        text-[45px]
+        md:text-[65px]
         font-bold
         leading-[1];
     }
