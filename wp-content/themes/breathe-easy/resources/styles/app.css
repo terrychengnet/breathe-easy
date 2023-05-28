@@ -130,6 +130,13 @@
         leading-[1.2];
     }
 
+    .header {
+        &.scroll {
+            @apply
+            bg-blue-main;
+        }
+    }
+
     nav.nav-primary .menu-item {
         @apply mr-[50px];
     }
