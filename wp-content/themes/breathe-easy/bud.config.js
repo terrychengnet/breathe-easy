@@ -34,7 +34,7 @@ export default async (app) => {
      * Proxy origin (`WP_HOME`)
      * @see {@link https://bud.js.org/docs/bud.proxy/}
      */
-    .proxy('http://local.breathe-easy.com')
+    .proxy('https://breathe-easy-2.local')
 
     /**
      * Development origin
