@@ -49,6 +49,13 @@ export default async (app) => {
     .setPublicPath('/wp-content/themes/breathe-easy/public/')
 
     /**
+     * *jQuery fix
+     */
+    .provide({
+      jquery: ["jQuery", "$"],
+    })
+
+    /**
      * Generate WordPress `theme.json`
      *
      * @note This overwrites `theme.json` on every build.

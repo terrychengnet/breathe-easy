@@ -8,7 +8,7 @@
           GET THE BREATHE-EASY EXPERIENCE
         </p>
         <h1 class="text-[50px] sm:text-[80px] md:text-[110px] font-bold leading-[1] mb-8 md:mb-16">Aircon Cleaning Specialists</h1>
-        <h3 class="text-[20px] sm:text-[30px] md:text-[40px] font-light leading-[1.1] mb-16">Industry-Leading practices & uncompromising integrity,unrivalled customer service, and total customer satisfaction.</h3>
+        <h3 class="text-[20px] sm:text-[30px] md:text-[40px] font-light leading-[1.4] mb-16">Industry-Leading practices & uncompromising integrity,unrivalled customer service, and total customer satisfaction.</h3>
       </div>
       <div class="grid hero-more-wrap col-span-2 place-items-end">
         <span class="cursor-pointer mb-16">
