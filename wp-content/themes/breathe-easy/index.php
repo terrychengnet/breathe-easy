@@ -16,8 +16,6 @@
   <!-- End Font Awesome -->
 
   <?php wp_head(); ?>
-  <script src="https://cdn.master.co/css@beta"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body <?php body_class(); ?>>
