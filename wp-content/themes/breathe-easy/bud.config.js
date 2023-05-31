@@ -28,7 +28,7 @@ export default async (app) => {
      * Matched files trigger a page reload when modified
      * @see {@link https://bud.js.org/docs/bud.watch/}
      */
-    .watch(['resources/views', 'app'])
+    .watch(['resources/views', 'app', 'wp-content'])
 
     /**
      * Proxy origin (`WP_HOME`)
@@ -46,13 +46,13 @@ export default async (app) => {
      * URI of the `public` directory
      * @see {@link https://bud.js.org/docs/bud.setPublicPath/}
      */
-    .setPublicPath('/app/themes/sage/public/')
+    .setPublicPath('/wp-content/themes/breathe-easy/public/')
 
     /**
      * *jQuery fix
      */
     .provide({
-      jquery: ["jQuery", "$"],
+      jquery: ['jQuery', '$'],
     })
 
     /**
