@@ -49,7 +49,7 @@ export default async (app) => {
     .setPublicPath('/wp-content/themes/breathe-easy/public/')
 
     /**
-     * *jQuery fix
+     *jQuery fix
      */
     .provide({
       jquery: ["jQuery", "$"],
