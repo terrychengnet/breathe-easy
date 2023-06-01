@@ -9,5 +9,12 @@
       <div class="header-contact">
         <a class="btn btn-contact" href="/contact-us">Contact Us</a>
       </div>
+      <button class="menuBtn ml-[15px] block lg:hidden">
+        <div class="menuBtn_lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
   </div>
 </header>
