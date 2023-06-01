@@ -1,11 +1,14 @@
 @php
-    $phone = get_field('phone_number', 'option');
-    $whatsapp = get_field('whatsapp_number', 'option');
-    $email = get_field('email', 'option');
-    $facebook = get_field('facebook', 'option');
-    $youtube = get_field('youtube', 'option');
-    $instagram = get_field('instagram', 'option');
-    $linkedin = get_field('linkedin', 'option');
+    $info = get_field('contact_info', 'option');
+    $phone = $info['phone_number'];
+    $whatsapp = $info['whatsapp_number'];
+    $email = $info['email'];
+
+    $social = get_field('social_account', 'option');
+    $facebook = $social['facebook'];
+    $youtube = $social['youtube'];
+    $instagram = $social['instagram'];
+    $linkedin = $social['linkedin'];
 @endphp
 
 <footer class="bg-blue-second">

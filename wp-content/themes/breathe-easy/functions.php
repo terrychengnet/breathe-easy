@@ -109,9 +109,9 @@ add_action('widgets_init', 'breathe_easy_register_widget_areas');
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(
         array(
-            'page_title' => 'Breathe Easy Setting',
-            'menu_title' => 'Breathe Easy Setting',
-            'menu_slug' => 'breathe-easy-setting',
+            'page_title' => 'Global Settings',
+            'menu_title' => 'Global Settings',
+            'menu_slug' => 'global-settings',
             'capability' => 'manage_options',
             'position' => 30,
             'update_button' => 'Save',

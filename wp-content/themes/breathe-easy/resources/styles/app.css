@@ -82,7 +82,14 @@
 
 @layer components {
     h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
+        @apply
+        font-bold;
+    }
+
+    .page-title {
+        @apply
+        text-[90px]
+        font-black;
     }
 
     .btn {
@@ -165,14 +172,16 @@
         .header-logo {
             @apply
             bg-[url('/images/header-logo.svg')]
-            bg-cover
+            bg-contain
             bg-no-repeat
             bg-center;
         }
     }
     
     nav.nav-primary .menu-item {
-        @apply mr-[50px];
+        @apply 
+        mr-[25px]
+        ml-[25px];
     }
 
     nav.nav-primary .menu-item a {
