@@ -18,6 +18,14 @@ domReady(async () => {
      });
   }
   headerScroll();
+
+  // Hamburger Menu
+  let hamburgerBtn = function () {
+    $('.menuBtn').on('click', function () {
+      $('.menuBtn_lines').toggleClass('open');
+    });
+  }
+  hamburgerBtn();
 });
 
 /**

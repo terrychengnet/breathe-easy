@@ -24,4 +24,18 @@
         </div>
         <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-black/20"></div>
     </div>
+<<<<<<< HEAD
+=======
+    <div class="hero-bg-shape absolute z-1 left-0 right-0 bottom-0">
+      <img class="w-100" src="{{ get_template_directory_uri() }}/resources/images/hero-bg-shape.svg"/>
+    </div>
+    <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-black/20"></div>
+  </div>
+@else
+  <div class="relative flex bg-blue-main border-b-[15px] border-blue-second">
+    <div class="container pt-[200px]">
+      <h1 class="page-title uppercase text-blue-second">{{ the_title() }}</h1>
+    </div>
+  </div>
+>>>>>>> origin/main
 @endif

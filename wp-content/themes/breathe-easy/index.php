@@ -15,7 +15,11 @@
             rel="stylesheet">
       <!-- End Font Awesome -->
 
+<<<<<<< HEAD
       <?php wp_head(); ?>
+=======
+  <?php wp_head(); ?>
+>>>>>>> origin/main
 </head>
 
 <body <?php body_class(); ?>>

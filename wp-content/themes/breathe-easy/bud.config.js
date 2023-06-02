@@ -34,7 +34,7 @@ export default async (app) => {
      * Proxy origin (`WP_HOME`)
      * @see {@link https://bud.js.org/docs/bud.proxy/}
      */
-    .proxy('https://breathe-easy-2.local')
+    .proxy('http://local.breathe-easy.com/')
 
     /**
      * Development origin
@@ -49,7 +49,7 @@ export default async (app) => {
     .setPublicPath('/wp-content/themes/breathe-easy/public/')
 
     /**
-     * *jQuery fix
+     *jQuery fix
      */
     .provide({
       jquery: ['jQuery', '$'],
