@@ -23,6 +23,8 @@ domReady(async () => {
   let hamburgerBtn = function () {
     $('.menuBtn').on('click', function () {
       $('.menuBtn_lines').toggleClass('open');
+      $('.header').toggleClass('filled');
+      $('.mobile-menu').slideToggle(100);
     });
   }
   hamburgerBtn();
