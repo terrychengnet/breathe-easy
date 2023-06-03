@@ -3,7 +3,7 @@
     $phone = $info['phone_number'];
     $whatsapp = $info['whatsapp_number'];
     $email = $info['email'];
-
+    
     $social = get_field('social_account', 'option');
     $facebook = $social['facebook'];
     $youtube = $social['youtube'];
@@ -12,8 +12,8 @@
 @endphp
 
 <footer class="bg-blue-second">
-    <div class="footer-wrapper container py-8 lg:py-20">
-        <div class="footer-top grid grid-cols-3 lg:grid-cols-4 text-white gap-4">
+    <div class="footer-wrapper container py-8 xl:py-20">
+        <div class="footer-top grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 text-white gap-4">
             <div class="footer-widget footer-cols widget-1">
                 @php dynamic_sidebar('footer-widget-1') @endphp
             </div>
@@ -22,7 +22,7 @@
                 @php dynamic_sidebar('footer-widget-2') @endphp
             </div>
 
-            <div class="footer-cols working-hours">
+            <div class="footer-cols working-hours mt-8 sm:mt-0">
                 <h3 class="mb-4">Working Hours</h3>
                 <span>Mon-Fri:<br />
                     10AM - 6PM</span><br /><br />
@@ -35,19 +35,20 @@
                 <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
             </div>
 
-            <div class="footer-cols contact-us order-first lg:order-last col-span-3 lg:col-span-1 mb-10 lg:mb-0">
+            <div
+                class="footer-cols contact-us order-first xl:order-last col-span-2 sm:col-span-3 xl:col-span-1 mb-10 xl:mb-0">
                 <div class="contact-us-wrapper bg-blue-main p-8 rounded-2xl grid gap-y-1">
                     <h3 class="mb-8">Contact Us</h3>
-                    <div class="grid grid-rows-2 grid-flow-col lg:grid-rows-1 gap-2 lg:grid-flow-row">
+                    <div class="grid grid-rows-1 sm:grid-rows-2 sm:grid-flow-col xl:grid-rows-1 gap-2 xl:grid-flow-row">
                         <div><i class="fa-solid fa-phone-flip mr-3 w-8"></i>
                             <span>{{ $phone }}</span>
                         </div>
                         <div><i class="fa-brands fa-whatsapp mr-3 w-8"></i>
                             <span>{{ $whatsapp }}</span>
                         </div>
-                        <div class="lg:mt-7 inline-flex items-center">
+                        <div class="xl:mt-7 inline-flex items-center">
                             <i class="fa-regular fa-envelope mr-3 w-8"></i>
-                            <a href="mailto:{{ $email }}" class="text-2xl lg:text-xl">{{ $email }}</a>
+                            <a href="mailto:{{ $email }}" class="text-2xl xl:text-xl">{{ $email }}</a>
                         </div>
                     </div>
                 </div>

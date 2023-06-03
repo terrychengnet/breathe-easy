@@ -2,6 +2,7 @@
 /*
 !wp-content/
 !.gitignore
+!acf*.json
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories

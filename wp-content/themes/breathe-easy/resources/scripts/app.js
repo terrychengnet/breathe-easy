@@ -1,22 +1,23 @@
 import domReady from '@roots/sage/client/dom-ready';
+import 'alpinejs';
 
 /**
  * Application entrypoint
  */
 domReady(async () => {
   // Header Scroll
-  let headerScroll = function (){
-    $(window).scroll(function(){
+  let headerScroll = function () {
+    $(window).scroll(function () {
       let header = $('.header');
       var headerHeight = header.height();
-      var windowHeight = ( $(window).scrollTop() );
-      if( windowHeight > headerHeight ){
+      var windowHeight = $(window).scrollTop();
+      if (windowHeight > headerHeight) {
         header.addClass('scroll');
       } else {
         header.removeClass('scroll');
       }
-     });
-  }
+    });
+  };
   headerScroll();
 
   // Hamburger Menu
@@ -24,7 +25,7 @@ domReady(async () => {
     $('.menuBtn').on('click', function () {
       $('.menuBtn_lines').toggleClass('open');
     });
-  }
+  };
   hamburgerBtn();
 });
 

@@ -14,7 +14,7 @@
       <link href="<?= get_template_directory_uri() ?>/resources/fonts/fontawesome/css/solid.css"
             rel="stylesheet">
       <!-- End Font Awesome -->
-
+      <script src="https://cdn.tailwindcss.com"></script>
       <?php wp_head(); ?>
 </head>
 
