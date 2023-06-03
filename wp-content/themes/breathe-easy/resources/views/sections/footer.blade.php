@@ -56,8 +56,8 @@
 
         </div>
         <div class="footer-bottom mt-14 grid gap-y-2">
-            <div>
-                <a class="header-logo justify-self-start" href="{{ home_url('/') }}">
+            <div class="justify-self-start">
+                <a class="header-logo" href="{{ home_url('/') }}">
                     <img class="header-logo-img w-[240px]"
                         src="{{ get_template_directory_uri() }}/resources/images/Header-logo.svg" />
                 </a>
