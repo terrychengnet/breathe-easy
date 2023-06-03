@@ -7,6 +7,8 @@
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
+
+    {{-- Timeline Module --}}
     <section class="section-timeline">
       <div class="container">
         <h1 class="section-title">Our Service</h1>
@@ -85,6 +87,60 @@
             md:left-[50%]
             md:translate-x-[-50%]"></span>
         </div>
+        </div>
+      </div>
+    </section>
+
+    {{-- Testimonials Module --}}
+    <section class="section-testimonials">
+      <div class="container">
+        <div class="testimonial-slider">
+          <div class="tes-item">
+            <div class="tes-wrap grid grid-cols-12">
+              <div class="tes-container relative col-span-8 col-start-3 
+              bg-blue-second
+              py-[40px]
+              px-[80px]
+              mt-[90px]
+              rounded-[35px]">
+              <img class="absolute top-[-85px] left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
+                <p class="tes-quote quote mb-[30px] pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
+                <div class="tes-btm flex justify-between">
+                  <div class="tes-rating">
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                  </div>
+                  <img class="" src="{{ get_template_directory_uri() }}/resources/images/quote-close.svg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tes-item">
+            <div class="tes-wrap grid grid-cols-12">
+              <div class="tes-container relative col-span-8 col-start-3 
+              bg-blue-second
+              py-[40px]
+              px-[80px]
+              mt-[90px]
+              rounded-[35px]">
+              <img class="absolute top-[-85px] left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
+                <p class="tes-quote quote mb-[30px] pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
+                <div class="tes-btm flex justify-between">
+                  <div class="tes-rating">
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
+                  </div>
+                  <img class="" src="{{ get_template_directory_uri() }}/resources/images/quote-close.svg"/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

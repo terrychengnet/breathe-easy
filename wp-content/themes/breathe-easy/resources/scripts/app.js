@@ -1,5 +1,8 @@
 import domReady from '@roots/sage/client/dom-ready';
 
+// Slick slider
+import 'slick-carousel/slick/slick.min.js';
+
 /**
  * Application entrypoint
  */
@@ -74,6 +77,27 @@ domReady(async () => {
     }
   }
   timeline();
+
+  // Testimonial Slider
+  var testimonial_slider = function() {
+    // var slider = $('.testimonials-slider');
+    // if (slider.lendth) {
+    //   $('.testimonials-slider').slick({
+    //     infinite: true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3
+    //   });
+    // }
+    let slider = $('.testimonial-slider');
+      if (slider.length > 0) {
+        slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+  testimonial_slider();
 });
 
 /**
