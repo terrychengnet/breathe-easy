@@ -102,9 +102,9 @@
         font-bold 
         text-white 
         text-center
-        px-9 
-        py-[15px] 
-        rounded-[40px] 
+        px-9
+        py-[15px]
+        rounded-[40px]
         bg-blue-light
         hover:text-white
         hover:bg-blue-second
@@ -155,7 +155,7 @@
 
     .header {
         &.scroll,
-        &.filled {
+        &.fill {
             @apply
             bg-blue-main;
 
@@ -167,6 +167,13 @@
             .nav-primary .menu-item a {
                 @apply
                 hover:text-blue-light; 
+            }
+
+            .btn-contact {
+                &:hover {
+                    @apply
+                    hover:bg-blue-light;
+                }
             }
         }
 
@@ -306,6 +313,42 @@
         top: 29px;
         left: 5px;
     }
+  /* Timeline */
+  .timeline-dot {
+    &.in-view {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-image: url('https://sg0duxoli5-flywheel.netdna-ssl.com/wp-content/themes/inspired_elearning_theme/images/check-dark.svg');
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @apply
+        bg-grey-dark;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      transition: all .4s ease-in-out;
+      @apply
+      bg-grey;
+    }
+
+  }
 
   /* Glass CSS START */
   /* Footer START*/
