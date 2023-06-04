@@ -1,0 +1,25 @@
+Log created: 2023-06-04 03:13:58
+Type: backup
+[2023-06-04 03:13:59][notice]Start backing up.
+[2023-06-04 03:13:59][notice]server info fcgi:Off max execution time: 300 wp version:6.2.2 php version:8.1.15 db version:10.5.17 php ini:safe_mode: memory_limit:256M memory_get_usage:5.11 MB memory_get_peak_usage:5.18 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2023-06-04 03:13:59][notice]Prepare to backup backup_db files.
+[2023-06-04 03:13:59][notice]Start exporting database.
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_links
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_term_relationships
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_commentmeta
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_term_taxonomy
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_termmeta
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_terms
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_usermeta
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_users
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_postmeta
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_comments
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_posts
+[2023-06-04 03:13:59][notice]Preparing to dump table wp_options
+[2023-06-04 03:13:59][notice]Exporting database finished.
+[2023-06-04 03:13:59][notice]Start compressing database
+[2023-06-04 03:13:59][notice]Prepare to zip file. file: breathe-easy-2.local_wpvivid-647c017616c47_2023-06-04-03-13_backup_db.sql
+[2023-06-04 03:13:59][notice]Adding zip files completed.breathe-easy-2.local_wpvivid-647c017616c47_2023-06-04-03-13_backup_db.part001.zip, filesize: 317.88 KB
+[2023-06-04 03:13:59][notice]Compressing database completed
+[2023-06-04 03:13:59][notice]Backing up backup_db completed.
+[2023-06-04 03:13:59][notice]Backup completed.
