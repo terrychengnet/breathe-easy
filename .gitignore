@@ -10,7 +10,7 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
-!wp-content/*backup*/
+!wp-content/*backup*/*db.zip
 
 wp-config.php
 .DS_Store
