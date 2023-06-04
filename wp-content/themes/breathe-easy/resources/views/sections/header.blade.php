@@ -10,12 +10,19 @@
         <div class="header-contact">
             <a class="btn btn-contact" href="/contact-us">Contact Us</a>
         </div>
-        <button class="menuBtn ml-[15px] block lg:hidden">
-            <div class="menuBtn_lines">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </button>
+    </div>
+    <div class="mobile-menu hidden bg-blue-main/95">
+        <div class="container">
+            @if (has_nav_menu('primary_navigation'))
+                <div class="mobile-menu-wrap py-[40px]">
+                    {!! wp_nav_menu([
+                        'theme_location' => 'primary_navigation',
+                        'menu_class' => 'mobile-menu-list',
+                        'echo' => false,
+                    ]) !!}
+                </div>
+            @endif
+        </div>
     </div>
 </header>
