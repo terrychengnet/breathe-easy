@@ -8,7 +8,6 @@
     @while (have_posts())
         @php(the_post())
         @include('partials.page-header')
-        <script src="//unpkg.com/alpinejs" defer></script>
         <div class="container text-grey mx-auto px-10 lg:px-20 py-20" x-data="{
             faqs: [
                 @if (have_rows('faqs')) @while (have_rows('faqs'))
