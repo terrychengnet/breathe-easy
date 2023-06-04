@@ -58,7 +58,7 @@
             <div>
                 <a class="header-logo justify-self-start" href="{{ home_url('/') }}">
                     <img class="header-logo-img w-[240px]"
-                        src="{{ get_template_directory_uri() }}/resources/images/Header-logo.svg" />
+                        src="{{ get_template_directory_uri() }}/resources/images/header-logo.svg" />
                 </a>
             </div>
             <div class="copyright-row grid grid-flow-col border-t border-blue-main pt-2 text-sm font-medium">

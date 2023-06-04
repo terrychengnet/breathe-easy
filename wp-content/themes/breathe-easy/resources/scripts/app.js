@@ -39,9 +39,6 @@ domReady(async () => {
     greyLine = $('.default-line'),
     lineToDraw = $('.draw-line');
 
-    // sets the height that the greyLine (.default-line) should be according to `.timeline ul` height
-
-    // run this function only if draw line exists on the page
     if(lineToDraw.length) {
       $(window).on('scroll', function () {
 
