@@ -91,7 +91,8 @@ domReady(async () => {
     let slider = $('.testimonial-slider');
       if (slider.length > 0) {
         slider.slick({
-        infinite: true,
+        dots: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1
       });

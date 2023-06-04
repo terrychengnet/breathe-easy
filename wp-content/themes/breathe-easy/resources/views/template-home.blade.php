@@ -13,7 +13,7 @@
       <div class="container">
         <h1 class="section-title">Our Service</h1>
         <div class="timeline-body relative">
-          {{--  Text Left  --}}
+          {{--  Text on left  --}}
           <div class="timeline__item relative z-20 grid grid-cols-12 gap-1 mb-[60px]">
             <div class="timeline__content-wrap pt-[20px] md:pt-[40px]
             col-span-7 
@@ -45,7 +45,7 @@
             </div>
           </div>
 
-           {{--  Text Right  --}}
+           {{--  Text on right  --}}
            <div class="timeline__item relative z-20 grid grid-cols-12 gap-1 mb-[60px]">
             <div class="timeline__content-wrap pt-[20px] md:pt-[40px] 
               col-span-7
@@ -101,10 +101,14 @@
               bg-blue-second
               py-[40px]
               px-[80px]
-              mt-[90px]
+              mt-[105px]
               rounded-[35px]">
               <img class="absolute top-[-85px] left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
                 <p class="tes-quote quote mb-[30px] pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
+                <div class="tes-profile absolute top-[-100px] right-[-100px]">
+                  <img class="block aspect-square rounded-[50%] w-[230px] mb-[20px]" src="{{ get_template_directory_uri() }}/resources/images/avatar.jpg"/>
+                  <p class="text-black font-bold text-[30px] text-center">CHUN HO</p>
+                </div>
                 <div class="tes-btm flex justify-between">
                   <div class="tes-rating">
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
@@ -124,10 +128,14 @@
               bg-blue-second
               py-[40px]
               px-[80px]
-              mt-[90px]
+              mt-[105px]
               rounded-[35px]">
               <img class="absolute top-[-85px] left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
-                <p class="tes-quote quote mb-[30px] pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
+                <p class="tes-quote quote mb-[30px] pr-[20%]">Explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
+                <div class="tes-profile absolute top-[-100px] right-[-100px]">
+                  <img class="block aspect-square rounded-[50%] w-[230px] mb-[20px]" src="{{ get_template_directory_uri() }}/resources/images/avatar.jpg"/>
+                  <p class="text-black font-bold text-[30px] text-center">CHUN HO</p>
+                </div>
                 <div class="tes-btm flex justify-between">
                   <div class="tes-rating">
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>

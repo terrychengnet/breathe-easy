@@ -366,7 +366,59 @@
       @apply
       bg-grey;
     }
+  }
 
+  /* Testimonials */
+  .testimonial-slider {
+    .slick-arrow {
+      @apply
+      z-50;
+
+      &::before {
+        @apply
+        block
+        content-['']
+        w-[80px]
+        h-[80px]
+        text-blue-second
+        text-[50px] 
+        font-['bold'];
+        font-family: 'Font Awesome 6 Free';
+      }
+
+      &.slick-prev {
+        @apply
+        before:content-['\f08b']
+        rotate-180;
+      }
+      &.slick-next {
+        @apply
+        before:content-['\f08b'];
+      }
+    }
+
+    .slick-list {
+      @apply
+      pb-[25px];
+    }
+
+    .slick-dots {
+      li {
+        button {
+          @apply
+          before:content-['•']
+          before:text-[15px]
+          before:text-black;
+        }
+
+        &.slick-active {
+          button {
+            @apply
+            before:text-blue-second;
+          }
+        }
+      }
+    }
   }
 
   /* Glass CSS START */
