@@ -2,6 +2,8 @@ import domReady from '@roots/sage/client/dom-ready';
 
 // Slick slider
 import 'slick-carousel/slick/slick.min.js';
+// Alpine
+import Alpine from 'alpinejs';
 
 /**
  * Application entrypoint
@@ -75,16 +77,8 @@ domReady(async () => {
   }
   timeline();
 
-  // Testimonial Slider
-  var testimonial_slider = function() {
-    // var slider = $('.testimonials-slider');
-    // if (slider.lendth) {
-    //   $('.testimonials-slider').slick({
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3
-    //   });
-    // }
+  // Testimonial Module
+  let testimonial_slider_module  = function() {
     let slider = $('.testimonial-slider');
       if (slider.length > 0) {
         slider.slick({
@@ -95,7 +89,17 @@ domReady(async () => {
       });
     }
   }
-  testimonial_slider();
+  testimonial_slider_module();
+
+  // FAQ Module
+  let faqModule_module = function() {
+    let faq = $('.section-faq');
+    if (faq.length > 0) {
+      window.Alpine = Alpine;
+      Alpine.start();
+    }
+  }
+  faqModule_module();
 });
 
 /**
