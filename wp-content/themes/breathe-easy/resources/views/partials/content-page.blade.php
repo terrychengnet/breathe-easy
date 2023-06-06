@@ -1,6 +1,9 @@
 @php(the_content())
 
 {{-- FAQ --}}
+
+@if ((get_field('faqs')))
+
 <section class="section-faq">
     <div class="container text-grey" x-data="{
       faqs: [
@@ -37,4 +40,5 @@
   </div>
   </section>
 
+@endif
 {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
