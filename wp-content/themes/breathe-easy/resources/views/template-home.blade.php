@@ -4,9 +4,7 @@
 
 @extends('layouts.app')
 
-@section('content')
-  @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
+@include('partials.page-header')
 
     {{-- Timeline Module --}}
     <section class="section-timeline">
@@ -16,22 +14,26 @@
           {{--  Text on left  --}}
           <div class="timeline__item relative z-20 grid grid-cols-12 gap-1 mb-[60px]">
             <div class="timeline__content-wrap pt-[20px] md:pt-[40px]
-            col-span-7 
-            md:col-span-5
-            col-start-7
+            col-span-8
+            col-start-4
+            sm:col-span-7
+            sm:col-start-7
+            md:col-span-5            
             order-2 
             md:order-1">
               <h2 class="section-heading mb-[25px]">100% Safe Cleaning Products
                 <span class="timeline-dot absolute top-[50px] 
                 left-[-17%]
-                md:left-0 
+                md:left-0
                 right-0"></span>
               </h2>
               <p class="description mb-[25px]">We use non-toxic products which are perfectly safe and pose zero risk to children, pregnant women, the elderly or pets.</p>
               <a class="btn" href=#>Read More</a>
             </div>
-            <div class="timeline__img-wrap block relative 
-            col-span-4
+            <div class="timeline__img-wrap block relative mb-5 sm:mb-0
+            col-span-6
+            col-start-4
+            sm:col-span-4
             md:col-span-5
             md:col-start-8 
             order-1 
@@ -153,42 +155,70 @@
       </div>
     </section>
 
-    {{-- FAQ --}}
-    <section class="section-faq">
-      <div class="container text-grey" x-data="{
-        faqs: [
-            @if (have_rows('faqs')) @while (have_rows('faqs'))
-                @php(the_row())
-                {
-                    question: '{{ get_sub_field('question') }}',
-                    answer: '{!! str_replace(["\r\n", "\r", "\n"], '<br/>', addslashes(get_sub_field('answer'))) !!}',
-                    isOpen: true,
-                },
-                @endwhile @endif
-        ]
-    }">
-        <h3 class="text-2xl font-bold text-center mt-[32px]">LEARN MORE ABOUT OUR SERVICES</h3>
-        <h1 class="section-title mt-[15px]">FAQs</h1>
-        <div class="leading-loose mt-20">
-            <template x-for="(faq, index) in faqs" :key="index">
-                <div class="border-b-4 border-sky-300 pb-4">
-                    <button
-                        class="w-full font-bold text-2xl lg:text-3xl text-blue-main py-3 flex justify-between items-center mt-4 text-left"
-                        :class="index !== faqs.length - 1 && ''"
-                        @click="faqs = faqs.map((f, i) => ({ ...f, isOpen: i !== index ? false : !f.isOpen}))">
-                        <div x-text="faq.question" class="w-5/6"></div>
-                        <i x-show="!faq.isOpen" class="fa-solid fa-caret-right"></i>
-                        <i x-show="faq.isOpen" class="fa-solid fa-caret-down"></i>
-                    </button>
-
-                    <div class="text-blue-main lg:text-xl text-base mt-2 pt-4 pb-8" x-show="faq.isOpen"
-                        x-html="faq.answer">
-                    </div>
-                </div>
-            </template>
+    {{-- Contact Form Module --}}
+    @php
+    $info = get_field('contact_info', 'option');
+    $whatsapp = $info['whatsapp_number'];
+    @endphp
+    <section class="section-contact bg-blue-main py-[95px]">
+      <div class="container">
+        <div class="grid grid-cols-12">
+          <div class="
+            col-span-12
+            lg:col-span-4
+            mb-[80px]
+            lg:mb-0">
+            <h1 class="text-white leading-[1.1] mb-[70px]">Get a Free Consultation Now</h1>
+            <p class="text-white text-[25px] font-[300] leading-[1.3]">Fill in the form and we'll give you a call for a free consultation. Your personal information stays private and secure.</p>
+            <div class="form-line-break relative text-center">
+              <span class="relative z-10 inline-block text-white text-[40px] font-bold bg-blue-main p-[25px] mx-auto">OR</span>
+              <span class="form__white-line 
+                absolute
+                left-0
+                right-0
+                top-1/2 
+                transform 
+                -translate-y-1/2
+                w-full 
+                h-[2px] 
+              bg-white
+              "></span>
+            </div>
+            <p class="text-white text-[25px] font-[300] leading-[1.3] mb-[20px]">If you wish, you can also reach us directly via whatsapp for an instant consultation.</p>            
+            <p class="flex">
+              <i class="fa-brands fa-whatsapp text-white text-[40px] mr-4"></i>
+              <span class="text-white font-bold text-[25px] self-center">{{ $whatsapp }}</span>
+            </p>
+          </div>
+            <div class="
+              col-span-12
+              lg:col-span-5
+              lg:col-start-7">
+            <form class="contact-form">
+              <input class="form-input" type="text" name="name" placeholder="Name*"/>
+              <input class="form-input" type="text" name="phone" placeholder="Phone number*"/>
+              <input class="form-input" type="email" name="email" placeholder="E-mail*"/>
+              <textarea class="form-input
+              min-h-[250px]
+              text-[25px]
+              border-t-[2px]
+              border-r-[2px]
+              border-l-[2px]
+              py-[15px]
+              px-[20px]
+              my-[50px]
+              rounded-[35px]
+              " name="form-message" form="usrform"  placeholder="Message"></textarea>
+              <input class="btn btn-submit form-submit" type="submit" value="Send">
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
+
+
+@section('content')
+  @while(have_posts()) @php(the_post())
     @include('partials.content-page')
   @endwhile
 @endsection

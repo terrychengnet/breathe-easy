@@ -100,6 +100,12 @@
         font-bold;
     }
 
+    h1 {
+      @apply
+      text-[65px]
+      md:text-[75px];
+    }
+
     .page-title {
         @apply
         text-[90px]
@@ -123,7 +129,6 @@
         hover:text-white
         hover:bg-blue-second
         hover:ease-in;
-        
 
         &.btn-contact {
             @apply
@@ -135,6 +140,30 @@
             bg-blue-second
             hover:bg-blue-main;
         }
+
+        &.btn-submit {
+          @apply
+          cursor-pointer
+          min-w-[150px];
+        }
+    }
+
+    .form-input {
+      @apply
+      block 
+      w-full 
+      focus:outline-none 
+      bg-blue-main 
+      text-[35px] 
+      text-blue-second 
+      font-bold 
+      placeholder:text-blue-light
+      border-b-[2px]
+      border-solid
+      border-blue-light
+      py-[8px]
+      mb-[24px]
+      autofill:shadow-[inset_0_0_0px_1000px_rgb(255,255,0)];
     }
 
     section {
