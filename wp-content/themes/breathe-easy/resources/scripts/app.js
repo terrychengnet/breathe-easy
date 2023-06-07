@@ -83,9 +83,18 @@ domReady(async () => {
       if (slider.length > 0) {
         slider.slick({
         dots: true,
+        arrows: true,
         infinite: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: false,
+            }
+          }
+        ]
       });
     }
   }

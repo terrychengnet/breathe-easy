@@ -199,9 +199,12 @@
     .quote {
       @apply
       text-white
-      text-[40px]
+      text-[25px]
+      md:text-[px]
+      lg:text-[40px]
       font-medium
       leading-[1.3]
+      md:leading-[1.2]
       italic;
     }
 
@@ -401,14 +404,19 @@
   .testimonial-slider {
     .slick-arrow {
       @apply
+      w-[50px]
+      h-[50px]
+      top-1/2 
+      transform 
+      -translate-y-1/2
       z-50;
 
       &::before {
         @apply
         block
         content-['']
-        w-[80px]
-        h-[80px]
+        w-[50px]
+        h-[50px]
         text-blue-second
         text-[50px] 
         font-['bold'];
@@ -418,11 +426,13 @@
       &.slick-prev {
         @apply
         before:content-['\f08b']
-        rotate-180;
+        rotate-180
+        left-0;
       }
       &.slick-next {
         @apply
-        before:content-['\f08b'];
+        before:content-['\f08b']
+        right-0;
       }
     }
 
