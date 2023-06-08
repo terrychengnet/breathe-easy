@@ -14,15 +14,15 @@
           {{--  Text on left  --}}
           <div class="timeline__item relative z-20 grid grid-cols-12 gap-1 mb-[60px]">
             <div class="timeline__content-wrap pt-[20px] md:pt-[40px]
-            col-span-8
-            col-start-4
-            sm:col-span-7
+            col-span-7
+            col-start-6
+            sm:col-span-6
             sm:col-start-7
-            md:col-span-5            
+            md:col-span-5
             order-2 
             md:order-1">
               <h2 class="section-heading mb-[25px]">100% Safe Cleaning Products
-                <span class="timeline-dot absolute top-[50px] 
+                <span class="timeline-dot hidden sm:block absolute top-[50px] 
                 left-[-17%]
                 md:left-0
                 right-0"></span>
@@ -31,11 +31,9 @@
               <a class="btn" href=#>Read More</a>
             </div>
             <div class="timeline__img-wrap block relative mb-5 sm:mb-0
-            col-span-6
-            col-start-4
-            sm:col-span-4
+            col-span-4
             md:col-span-5
-            md:col-start-8 
+            md:col-start-8
             order-1 
             md:order-2">
               <div class="timeline__img flex relative z-10 place-content-center rounded-[40px] aspect-square overflow-hidden">
@@ -43,7 +41,7 @@
                 <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
                 <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
               </div>
-              <div class="timeline__img-shade absolute left-0 right-0 top-[60px] md:top-[80px] aspect-square bg-grey rounded-[40px] m-[40px]"></div>
+              <div class="timeline__img-shade absolute left-0 right-0 top-[35px] sm:top-[50px] md:top-[80px] aspect-square bg-grey rounded-[30px] sm:round-[30px] md:rounded-[40px] m-[20px] sm:m-[30px] md:m-[40px]"></div>
             </div>
           </div>
 
@@ -51,12 +49,14 @@
            <div class="timeline__item relative z-20 grid grid-cols-12 gap-1 mb-[60px]">
             <div class="timeline__content-wrap pt-[20px] md:pt-[40px] 
               col-span-7
+              col-start-6
+              sm:col-span-6
+              sm:col-start-7
               md:col-span-5
-              col-start-7
               md:col-start-8 
               order-2">
               <h2 class="section-heading mb-[25px]">Extend Aircon Lifespan & Lower Electricity Bills
-                <span class="timeline-dot absolute top-[50px] 
+                <span class="timeline-dot hidden sm:block absolute top-[50px] 
                 left-[-17%]
                 md:left-0 
                 right-0"></span>
@@ -72,19 +72,21 @@
                 <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
                 <img class="" src="{{ get_template_directory_uri() }}/resources/images/timeline-img-1.jpg"/>
               </div>
-              <div class="timeline__img-shade absolute left-0 right-0 top-[60px] md:top-[80px] aspect-square bg-grey rounded-[40px] m-[40px]"></div>
+              <div class="timeline__img-shade absolute left-0 right-0 top-[35px] sm:top-[50px] md:top-[80px] aspect-square bg-grey rounded-[30px] sm:round-[30px] md:rounded-[40px] m-[20px] sm:m-[30px] md:m-[40px]"></div>
             </div>
           </div>
           
         {{-- Timeline --}}
         <div class="timeline absolute z-0 top-0 left-0 right-0 bottom-0 p-[50px]">
             <span class="default-line absolute w-[5px] h-[100%] bg-grey 
-            left-[41%] 
+            left-[16%] 
+            sm:left-[41%] 
             translate-x-[0]
             md:left-[50%]
             md:translate-x-[-50%]"></span>
             <span class="draw-line absolute w-[5px] h-[0] bg-grey-dark 
-            left-[41%] 
+            left-[16%] 
+            sm:left-[41%] 
             translate-x-[0]
             md:left-[50%]
             md:translate-x-[-50%]"></span>
@@ -105,12 +107,13 @@
                 lg:col-start-3
                 bg-blue-second
                 py-[40px]
-                px-[80px]
+                px-[40px]
                 pt-[100px]
                 lg:pt-[40px]
+                lg:px-[80px]
                 mt-[105px]
                 rounded-[35px]">
-                <img class="absolute top-[-85px] left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
+                <img class="absolute top-[-85px] left-[40px] lg:left-[80px]" src="{{ get_template_directory_uri() }}/resources/images/quote-open.svg"/>
                 <p class="block lg:hidden text-center text-[30px] text-blue-main font-bold mb-[25px]">CHUN HO</p>
                 <p class="tes-quote quote mb-[30px] pr-0 lg:pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
                 <div class="tes-profile absolute 

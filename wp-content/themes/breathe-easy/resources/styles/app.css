@@ -175,9 +175,10 @@
         @apply 
         block 
         text-[#b0b0b0] 
-        text-[75px] 
-        text-center 
-        my-[40px] 
+        text-[55px]
+        md:text-[75px] 
+        text-center
+        my-[40px]
         leading-[1];
     }
 
