@@ -14,3 +14,5 @@ wp-content/*
 
 wp-config.php
 .DS_Store
+wp-content/wpvividbackups/wpvivid_restore_log.txt
+wp-content/wpvividbackups/wpvivid_log/wpvivid-6484ab444f55d_restore_log.txt
