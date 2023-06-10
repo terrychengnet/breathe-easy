@@ -125,3 +125,27 @@ register_nav_menus(
         'footer_navigation' => 'Footer Navigation',
     )
 );
+
+add_action('acf/init', 'my_acf_init');
+function my_acf_init() {
+     
+    if( function_exists('acf_register_block') ) {    
+        acf_register_block(array(
+            'name'              => 'faq',
+            'title'             => __('FAQ'),
+            'description'       => __('A custom faq block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'faq', 'question' ),
+        ));
+    }
+}
+
+function my_acf_block_render_callback( $block ) {
+    $slug = str_replace('acf/', '', $block['name']);
+    
+    if( file_exists( get_theme_file_path("/resources/views/blocks/block-{$slug}.php") ) ) {
+        include( get_theme_file_path("/resources/views/blocks/block-{$slug}.php") );
+    }
+}
