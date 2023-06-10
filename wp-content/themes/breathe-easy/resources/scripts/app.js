@@ -3,12 +3,15 @@ import domReady from '@roots/sage/client/dom-ready';
 // Slick slider
 import 'slick-carousel/slick/slick.min.js';
 // Alpine
-import Alpine from 'alpinejs';
+import {
+  Collapse,
+  initTE,
+} from "tw-elements";
 
 /**
  * Application entrypoint
  */
-domReady(async () => {
+domReady(async () => {  
   // Header Scroll
   let headerScroll = function (){
     $(window).scroll(function(){
@@ -104,8 +107,7 @@ domReady(async () => {
   let faqModule_module = function() {
     let faq = $('.section-faq');
     if (faq.length > 0) {
-      window.Alpine = Alpine;
-      Alpine.start();
+      initTE({ Collapse });
     }
   }
   faqModule_module();

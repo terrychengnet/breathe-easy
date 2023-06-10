@@ -24,7 +24,7 @@
     "@roots/sage": "6.12.3"
   },
   "dependencies": {
-    "alpinejs": "^3.12.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tw-elements": "^1.0.0-beta2"
   }
 }
