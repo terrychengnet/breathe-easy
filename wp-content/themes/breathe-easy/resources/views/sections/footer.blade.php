@@ -15,26 +15,30 @@
     <div class="footer-wrapper container py-8 lg:py-20">
         <div class="footer-top grid grid-cols-12 text-white gap-4">
             <div class="footer-nav-wrap col-span-5">
-                <div class="footer-widget footer-cols widget-1">
-                    @php dynamic_sidebar('footer-widget-1') @endphp
-                </div>
-    
-                <div class="footer-widget footer-cols widget-2">
-                    @php dynamic_sidebar('footer-widget-2') @endphp
+                <div class="footer-menu text-left">
+                    {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'echo' => false]) !!}
                 </div>
             </div>
 
             <div class="footer-cols col-span-3 working-hours">
                 <h3 class="mb-4">Working Hours</h3>
-                <span>Mon-Fri:<br />
-                    10AM - 6PM</span><br /><br />
-                <span class="mt-4">Sat-Sun: Closed</span>
+                <span class="block mb-5">Mon-Fri:<br />
+                    10AM - 6PM</span>
+                <span class="block mt-4">Sat-Sun:<br /> Closed</span>
 
                 <h3 class="mt-10">Follow US</h3>
-                <a href="{{ $facebook }}"><i class="fa-brands fa-facebook"></i></a>
-                <a href="{{ $youtube }}"><i class="fa-brands fa-youtube"></i></a>
-                <a href="{{ $instagram }}"><i class="fa-brands fa-instagram"></i></a>
-                <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
+                @if($facebook)
+                    <a href="{{ $facebook }}"><i class="fa-brands fa-facebook"></i></a>
+                @endif
+                @if($youtube)
+                    <a href="{{ $youtube }}"><i class="fa-brands fa-youtube"></i></a>
+                @endif
+                @if($instagram)
+                    <a href="{{ $instagram }}"><i class="fa-brands fa-instagram"></i></a>
+                @endif
+                @if($linkedin)
+                    <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
+                @endif
             </div>
 
             <div class="footer-cols col-span-12 lg:col-span-4 contact-us order-first lg:order-last mb-10 lg:mb-0">
@@ -66,7 +70,7 @@
             <div class="copyright-row grid grid-flow-col border-t border-blue-main pt-2 text-sm font-medium">
                 <div class="text-blue-main">© Breathe-Easy HK Limited. {{ date('Y') }} All Rights Reserved
                 </div>
-                <div class="footer-menu text-right">
+                <div class="footer-links text-right">
                     {!! wp_nav_menu(['theme_location' => 'footer_quick_links', 'echo' => false]) !!}
                 </div>
 

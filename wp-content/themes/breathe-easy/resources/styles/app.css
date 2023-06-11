@@ -485,17 +485,48 @@
     }
   }
 
-  .footer-widget {
-    .widget.widget_nav_menu {
-      @apply mt-10;
-    }
-
+  .footer-menu {
     ul {
-      @apply text-xl list-disc list-inside;
-    }
+      @apply text-xl;
+    
 
     li {
-      @apply mt-2;
+      @apply 
+      mb-[50px]
+      w-[50%]
+      float-left;
+
+      a {
+        @apply
+        text-[25px]
+        font-bold;
+      }
+
+      &.menu-item-has-children {
+        ul.sub-menu {
+          @apply
+          pt-[20px];
+
+          li {
+            @apply
+            w-[100%]
+            mb-[10px];
+
+            a {
+              @apply
+              relative
+              text-[20px]
+              font-[400]
+              pl-[15px]
+              before:content-['-']
+              before:absolute
+              before:top-[-2px]
+              before:left-[0];
+            }
+          }
+        }
+      }
+    }
     }
   }
 
