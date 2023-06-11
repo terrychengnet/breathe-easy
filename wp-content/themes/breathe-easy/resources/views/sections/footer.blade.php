@@ -13,16 +13,18 @@
 
 <footer class="bg-blue-second">
     <div class="footer-wrapper container py-8 lg:py-20">
-        <div class="footer-top grid grid-cols-3 lg:grid-cols-4 text-white gap-4">
-            <div class="footer-widget footer-cols widget-1">
-                @php dynamic_sidebar('footer-widget-1') @endphp
+        <div class="footer-top grid grid-cols-12 text-white gap-4">
+            <div class="footer-nav-wrap col-span-5">
+                <div class="footer-widget footer-cols widget-1">
+                    @php dynamic_sidebar('footer-widget-1') @endphp
+                </div>
+    
+                <div class="footer-widget footer-cols widget-2">
+                    @php dynamic_sidebar('footer-widget-2') @endphp
+                </div>
             </div>
 
-            <div class="footer-widget footer-cols widget-2">
-                @php dynamic_sidebar('footer-widget-2') @endphp
-            </div>
-
-            <div class="footer-cols working-hours">
+            <div class="footer-cols col-span-3 working-hours">
                 <h3 class="mb-4">Working Hours</h3>
                 <span>Mon-Fri:<br />
                     10AM - 6PM</span><br /><br />
@@ -35,7 +37,7 @@
                 <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
             </div>
 
-            <div class="footer-cols contact-us order-first lg:order-last col-span-3 lg:col-span-1 mb-10 lg:mb-0">
+            <div class="footer-cols col-span-12 lg:col-span-4 contact-us order-first lg:order-last mb-10 lg:mb-0">
                 <div class="contact-us-wrapper bg-blue-main p-8 rounded-2xl grid gap-y-1">
                     <h3 class="mb-8">Contact Us</h3>
                     <div class="grid grid-rows-2 grid-flow-col lg:grid-rows-1 gap-2 lg:grid-flow-row">
@@ -62,10 +64,10 @@
                 </a>
             </div>
             <div class="copyright-row grid grid-flow-col border-t border-blue-main pt-2 text-sm font-medium">
-                <div>© Breathe-Easy HK Limited. {{ date('Y') }} All Rights Reserved
+                <div class="text-blue-main">© Breathe-Easy HK Limited. {{ date('Y') }} All Rights Reserved
                 </div>
                 <div class="footer-menu text-right">
-                    {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'echo' => false]) !!}
+                    {!! wp_nav_menu(['theme_location' => 'footer_quick_links', 'echo' => false]) !!}
                 </div>
 
             </div>

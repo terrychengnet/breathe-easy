@@ -33,8 +33,7 @@
                   class="!visible <?php echo get_row_index()===1?'':'hidden';?>"
                   data-te-collapse-item
                   <?php echo get_row_index()===1?'data-te-collapse-show':'';?>
-                  aria-labelledby="faq-heading-<?php echo get_row_index();?>"
-                  data-te-parent="#faq_accordion">
+                  aria-labelledby="faq-heading-<?php echo get_row_index();?>">
                   <div class="text-blue-main lg:text-xl text-base mt-2 pt-4 pb-[60px] grid grid-cols-12">
                     <div class="col-span-12 md:col-span-10">
                         <?php echo str_replace(["\r\n", "\r", "\n"], '<br/>', addslashes(get_sub_field('answer'))); ?>

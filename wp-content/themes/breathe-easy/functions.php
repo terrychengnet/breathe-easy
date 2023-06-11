@@ -123,6 +123,7 @@ if (function_exists('acf_add_options_page')) {
 register_nav_menus(
     array(
         'footer_navigation' => 'Footer Navigation',
+        'footer_quick_links' => 'Footer Quick Links',
     )
 );
 
