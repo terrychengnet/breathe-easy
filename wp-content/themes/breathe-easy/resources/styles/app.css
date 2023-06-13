@@ -171,6 +171,11 @@
         py-[40px];
     }
 
+    .container-narrow {
+      @apply
+      max-w-[990px];
+    }
+
     .section-title {
         @apply 
         block 
@@ -475,14 +480,6 @@
         @apply text-4xl mr-2;
       }
     }
-
-    .contact-us-wrapper {
-      @apply text-3xl font-bold;
-
-      i {
-        @apply text-blue-second mr-3 w-8;
-      }
-    }
   }
 
   .footer-menu {
@@ -517,11 +514,6 @@
               relative
               text-[20px]
               font-[400]
-              pl-[15px]
-              before:content-['-']
-              before:absolute
-              before:top-[-2px]
-              before:left-[0];
             }
           }
         }

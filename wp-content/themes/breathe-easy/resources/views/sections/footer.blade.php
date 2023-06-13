@@ -14,17 +14,19 @@
 <footer class="bg-blue-second">
     <div class="footer-wrapper container py-8 lg:py-20">
         <div class="footer-top grid grid-cols-12 text-white gap-4">
-            <div class="footer-nav-wrap col-span-5">
+            <div class="footer-nav-wrap col-span-12 sm:col-span-7 lg:col-span-5">
                 <div class="footer-menu text-left">
                     {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'echo' => false]) !!}
                 </div>
             </div>
 
-            <div class="footer-cols col-span-3 working-hours">
+            <div class="footer-cols col-span-12 sm:col-span-5 lg:col-span-3 working-hours">
                 <h3 class="mb-4">Working Hours</h3>
-                <span class="block mb-5">Mon-Fri:<br />
-                    10AM - 6PM</span>
-                <span class="block mt-4">Sat-Sun:<br /> Closed</span>
+                <div class="grid grid-cols-12">
+                    <span class="block col-span-6 sm:col-span-12 mb-5">Mon-Fri:<br />
+                        10AM - 6PM</span>
+                    <span class="block col-span-6 sm:col-span-12">Sat-Sun:<br /> Closed</span>
+                </div>
 
                 <h3 class="mt-10">Follow US</h3>
                 @if($facebook)
@@ -44,16 +46,18 @@
             <div class="footer-cols col-span-12 lg:col-span-4 contact-us order-first lg:order-last mb-10 lg:mb-0">
                 <div class="contact-us-wrapper bg-blue-main p-8 rounded-2xl grid gap-y-1">
                     <h3 class="mb-8">Contact Us</h3>
-                    <div class="grid grid-rows-2 grid-flow-col lg:grid-rows-1 gap-2 lg:grid-flow-row">
-                        <div><i class="fa-solid fa-phone-flip mr-3 w-8"></i>
-                            <span>{{ $phone }}</span>
+                    <div class="grid gap-2
+                    grid-rows-1 
+                    sm:grid-rows-2">
+                        <div><i class="fa-solid fa-phone-flip mr-3 w-8 text-[24px]"></i>
+                            <span class="text-[25px] md:text-[30px] lg:text-[25px] xl:text-[30px] font-bold">{{ $phone }}</span>
                         </div>
-                        <div><i class="fa-brands fa-whatsapp mr-3 w-8"></i>
-                            <span>{{ $whatsapp }}</span>
+                        <div><i class="fa-brands fa-whatsapp mr-3 w-8 text-[30px]"></i>
+                            <span class="text-[25px] md:text-[30px] lg:text-[25px] xl:text-[30px] font-bold">{{ $whatsapp }}</span>
                         </div>
                         <div class="lg:mt-7 inline-flex items-center">
-                            <i class="fa-regular fa-envelope mr-3 w-8"></i>
-                            <a href="mailto:{{ $email }}" class="text-2xl lg:text-xl">{{ $email }}</a>
+                            <i class="fa-regular fa-envelope mr-3 w-8 text-[30px]"></i>
+                            <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold">{{ $email }}</a>
                         </div>
                     </div>
                 </div>
@@ -67,10 +71,10 @@
                         src="{{ get_template_directory_uri() }}/resources/images/header-logo.svg" />
                 </a>
             </div>
-            <div class="copyright-row grid grid-flow-col border-t border-blue-main pt-2 text-sm font-medium">
-                <div class="text-blue-main">© Breathe-Easy HK Limited. {{ date('Y') }} All Rights Reserved
+            <div class="copyright-row grid grid-cols-12 border-t border-blue-main pt-2 text-sm font-medium">
+                <div class="text-blue-main col-span-12 md:col-span-6">© Breathe-Easy HK Limited. {{ date('Y') }} All Rights Reserved
                 </div>
-                <div class="footer-links text-right">
+                <div class="footer-links col-span-6 md:col-span-6 text-left md:text-right mt-[15px] md:mt-[0]">
                     {!! wp_nav_menu(['theme_location' => 'footer_quick_links', 'echo' => false]) !!}
                 </div>
 
