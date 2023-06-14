@@ -137,8 +137,68 @@ function my_acf_init() {
             'description'       => __('A custom faq block.'),
             'render_callback'   => 'my_acf_block_render_callback',
             'category'          => 'formatting',
-            'icon'              => 'admin-comments',
+            'icon'              => 'format-chat',
             'keywords'          => array( 'faq', 'question' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'contact-form',
+            'title'             => __('Contact Form'),
+            'description'       => __('A custom contact form block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'editor-table',
+            'keywords'          => array( 'contact', 'contact form' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'timeline',
+            'title'             => __('Timeline'),
+            'description'       => __('A custom timeline block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'flag',
+            'keywords'          => array( 'timeline' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'testimonials',
+            'title'             => __('Testimonials'),
+            'description'       => __('A custom testimonials block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'slides',
+            'keywords'          => array( 'testimonial' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'service-cards',
+            'title'             => __('Service Cards'),
+            'description'       => __('A custom service cards block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'grid-view',
+            'keywords'          => array( 'service', 'card' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'quote',
+            'title'             => __('Quote'),
+            'description'       => __('A custom quote block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'format-quote',
+            'keywords'          => array( 'quote' ),
+        ));
+
+        acf_register_block(array(
+            'name'              => 'paragraph',
+            'title'             => __('Paragraph'),
+            'description'       => __('A custom paragraph block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'editor-paragraph',
+            'keywords'          => array( 'paragraph' ),
         ));
     }
 }

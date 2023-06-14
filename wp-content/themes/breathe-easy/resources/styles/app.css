@@ -112,6 +112,14 @@
         font-black;
     }
 
+    .para {
+      p {
+        @apply
+        text-[18px]
+        mb-[22px];
+      }
+    }
+
     .btn {
         @apply
         inline-block 
@@ -463,6 +471,17 @@
           }
         }
       }
+    }
+  }
+
+  .quote-content {
+    h2 {
+      @apply
+      text-center 
+      italic
+      text-[50px]
+      text-white
+      font-medium;
     }
   }
 

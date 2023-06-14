@@ -1,5 +1,5 @@
 @if (is_page_template('template-home.blade.php'))
-  <div class="relative flex w-full h-auto md:h-screen bg-cover bg-right md:bg-center min-h-[600px] md:min-h-[800px] border-b-[15px] border-blue-main" 
+  <div class="home-hero relative flex w-full h-auto md:h-screen bg-cover bg-right md:bg-center min-h-[600px] md:min-h-[800px] border-b-[15px] border-blue-main" 
         style="background-image:url({{ get_template_directory_uri() }}/resources/images/hero-bg.jpg);">
     <div class="relative z-30 grid grid-cols-12 gap-1 content-end">
       {{-- Hero Content --}}
@@ -12,7 +12,7 @@
       </div>
       <div class="grid hero-more-wrap col-start-11 col-span-1 place-items-end">
         <span class="cursor-pointer mb-16">
-          <i class="fa-regular fa-circle-arrow-down text-[40px] sm:text-[50px] md:text-[70px] text-white hover:text-blue-second"></i>
+          <i id="hero-read-more" class="fa-regular fa-circle-arrow-down text-[40px] sm:text-[50px] md:text-[70px] text-white hover:text-blue-second"></i>
         </span>
       </div>
     </div>
