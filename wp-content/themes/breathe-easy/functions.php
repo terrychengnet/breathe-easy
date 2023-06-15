@@ -127,16 +127,27 @@ register_nav_menus(
     )
 );
 
+add_filter( 'block_categories_all', 'example_block_category', 10, 2);
+function example_block_category( $categories, $post ) {
+	
+	array_unshift( $categories, array(
+		'slug'	=> 'custom',
+		'title' => 'Custom Blocks'
+	) );
+
+	return $categories;
+}
+
 add_action('acf/init', 'my_acf_init');
 function my_acf_init() {
      
-    if( function_exists('acf_register_block') ) {    
+    if( function_exists('acf_register_block') ) {
         acf_register_block(array(
             'name'              => 'faq',
             'title'             => __('FAQ'),
             'description'       => __('A custom faq block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'format-chat',
             'keywords'          => array( 'faq', 'question' ),
         ));
@@ -146,7 +157,7 @@ function my_acf_init() {
             'title'             => __('Contact Form'),
             'description'       => __('A custom contact form block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'editor-table',
             'keywords'          => array( 'contact', 'contact form' ),
         ));
@@ -156,7 +167,7 @@ function my_acf_init() {
             'title'             => __('Timeline'),
             'description'       => __('A custom timeline block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'flag',
             'keywords'          => array( 'timeline' ),
         ));
@@ -166,7 +177,7 @@ function my_acf_init() {
             'title'             => __('Testimonials'),
             'description'       => __('A custom testimonials block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'slides',
             'keywords'          => array( 'testimonial' ),
         ));
@@ -176,7 +187,7 @@ function my_acf_init() {
             'title'             => __('Service Cards'),
             'description'       => __('A custom service cards block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'grid-view',
             'keywords'          => array( 'service', 'card' ),
         ));
@@ -186,7 +197,7 @@ function my_acf_init() {
             'title'             => __('Quote'),
             'description'       => __('A custom quote block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'format-quote',
             'keywords'          => array( 'quote' ),
         ));
@@ -196,7 +207,7 @@ function my_acf_init() {
             'title'             => __('Paragraph'),
             'description'       => __('A custom paragraph block.'),
             'render_callback'   => 'my_acf_block_render_callback',
-            'category'          => 'formatting',
+            'category'          => 'custom',
             'icon'              => 'editor-paragraph',
             'keywords'          => array( 'paragraph' ),
         ));
