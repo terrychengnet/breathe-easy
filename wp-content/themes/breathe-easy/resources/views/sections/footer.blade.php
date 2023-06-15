@@ -23,9 +23,9 @@
             <div class="footer-cols col-span-12 sm:col-span-5 lg:col-span-3 working-hours">
                 <h3 class="mb-4">Working Hours</h3>
                 <div class="grid grid-cols-12">
-                    <span class="block col-span-6 sm:col-span-12 mb-5">Mon-Fri:<br />
+                    <span class="block col-span-6 sm:col-span-12 mb-5 text-[25px] md:text-[30px] leading-[1.3]">Mon-Fri:<br />
                         10AM - 6PM</span>
-                    <span class="block col-span-6 sm:col-span-12">Sat-Sun:<br /> Closed</span>
+                    <span class="block col-span-6 sm:col-span-12 text-[25px] md:text-[30px] leading-[1.3]">Sat-Sun:<br /> Closed</span>
                 </div>
 
                 <h3 class="mt-10">Follow US</h3>

@@ -5,7 +5,7 @@
                 <div class="quote-content">
                     <h2>We Clean Aircons Professionally</h2>
                 </div>
-            <span class="quote-close absolute right-[40px] bottom-[] w-[40px] h-[40px] text-white font-sans text-[180px] leading-[0]">&rdquo;</span>
+            <span class="quote-close absolute right-[40px] bottom-[-40px] w-[40px] h-[40px] text-white font-sans text-[180px] leading-[0]">&rdquo;</span>
         </div>
       </div>
 </section>

@@ -23,7 +23,7 @@
   </div>
 @else
   <div class="relative flex bg-blue-main border-b-[15px] border-blue-second">
-    <div class="container pt-[200px]">
+    <div class="container pt-[150px] md:pt-[200px]">
       <h1 class="page-title uppercase text-blue-second">{{ the_title() }}</h1>
     </div>
   </div>

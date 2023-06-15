@@ -11,8 +11,8 @@
             lg:col-span-4
             mb-[80px]
             lg:mb-0">
-            <h1 class="text-white leading-[1.1] mb-[70px]">Get a Free Consultation Now</h1>
-            <p class="text-white text-[25px] font-[300] leading-[1.3]">Fill in the form and we'll give you a call for a free consultation. Your personal information stays private and secure.</p>
+            <h1 class="text-white leading-[1.1] mb-[30px] md:mb-[70px]">Get a Free Consultation Now</h1>
+            <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3]">Fill in the form and we'll give you a call for a free consultation. Your personal information stays private and secure.</p>
             <div class="form-line-break relative text-center">
               <span class="relative z-10 inline-block text-white text-[40px] font-bold bg-blue-main p-[25px] mx-auto">OR</span>
               <span class="form__white-line 
@@ -27,7 +27,7 @@
               bg-white
               "></span>
             </div>
-            <p class="text-white text-[25px] font-[300] leading-[1.3] mb-[20px]">If you wish, you can also reach us directly via whatsapp for an instant consultation.</p>            
+            <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3] mb-[20px]">If you wish, you can also reach us directly via whatsapp for an instant consultation.</p>            
             <p class="flex">
               <i class="fa-brands fa-whatsapp text-white text-[40px] mr-4"></i>
               <span class="text-white font-bold text-[25px] self-center"><?php echo $whatsapp ?></span>
