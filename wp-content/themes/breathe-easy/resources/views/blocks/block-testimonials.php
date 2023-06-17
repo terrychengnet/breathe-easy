@@ -17,7 +17,7 @@
                 lg:px-[80px]
                 mt-[105px]
                 rounded-[35px]">
-                <img class="absolute top-[-85px] left-[40px] lg:left-[80px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-open.svg"/>
+                <img class="w-[50px] sm:w-[67px] absolute top-[-85px] left-[40px] lg:left-[80px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-open.svg"/>
                 <p class="block lg:hidden text-center text-[30px] text-blue-main font-bold mb-[25px]">CHUN HO</p>
                 <p class="tes-quote quote mb-[30px] pr-0 lg:pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
                 <div class="tes-profile absolute 
@@ -46,7 +46,7 @@
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
                   </div>
-                  <img class="" src="<?php echo get_template_directory_uri();?>/resources/images/quote-close.svg"/>
+                  <img class="w-[50px] sm:w-[67px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-close.svg"/>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
                 lg:px-[80px]
                 mt-[105px]
                 rounded-[35px]">
-                <img class="absolute top-[-85px] left-[40px] lg:left-[80px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-open.svg"/>
+                <img class="w-[50px] sm:w-[67px] absolute top-[-85px] left-[40px] lg:left-[80px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-open.svg"/>
                 <p class="block lg:hidden text-center text-[30px] text-blue-main font-bold mb-[25px]">CHUN HO</p>
                 <p class="tes-quote quote mb-[30px] pr-0 lg:pr-[20%]">Amazing service! The team was really professional and friendly, explained everything to me with recommendations. Really efficient and I can already feel the difference!</p>
                 <div class="tes-profile absolute 
@@ -97,7 +97,7 @@
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
                     <i class="fa-sharp fa-solid fa-star text-white text-[25px]"></i>
                   </div>
-                  <img class="" src="<?php echo get_template_directory_uri();?>/resources/images/quote-close.svg"/>
+                  <img class="w-[50px] sm:w-[67px]" src="<?php echo get_template_directory_uri();?>/resources/images/quote-close.svg"/>
                 </div>
               </div>
             </div>

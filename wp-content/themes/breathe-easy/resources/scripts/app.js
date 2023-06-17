@@ -2,11 +2,16 @@ import domReady from '@roots/sage/client/dom-ready';
 
 // Slick slider
 import 'slick-carousel/slick/slick.min.js';
+
 // Alpine
 import {
   Collapse,
   initTE,
 } from "tw-elements";
+
+//GSAP
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger.js";
 
 /**
  * Application entrypoint
@@ -125,6 +130,52 @@ domReady(async () => {
     }
   }
   faqModule_module();
+
+  // GSAP
+  gsap.registerPlugin(ScrollTrigger);
+  // Hero
+  gsap.to(".hero-pre-txt", {
+    y: -40,
+    opacity: 1,
+    duration: 0.7,
+    delay: 0.3,
+    scrollTrigger: { trigger: ".hero", start: "top center" }
+  });
+  gsap.to(".hero-title", {
+    y: -40,
+    opacity: 1,
+    duration: 0.7,
+    delay: 0.6,
+    scrollTrigger: { trigger: ".hero", start: "top center" }
+  });
+  gsap.to(".hero-content", {
+    scrollTrigger: {
+      scrub: true
+    }, 
+    y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+    ease: "none"
+  });
+
+  //Timeline
+  const t_items = gsap.utils.toArray(".timeline__item");
+
+  t_items.forEach((t_item, i) => {
+    const t_item_card = t_item.querySelector(".timeline__img-shade");
+    const t_item_num = t_item.querySelector(".timeline__num");
+
+    gsap.from(t_item_card, {
+      yPercent: 20,
+      duration: 0.9,
+      ease: "power2.inOut",
+      scrollTrigger: { trigger: t_item, scrub: true }
+    });
+
+    gsap.to(t_item_num, {
+      opacity: 1,
+      scrollTrigger: { trigger: t_item, start: "top center" }
+    });
+  });
+
 });
 
 /**

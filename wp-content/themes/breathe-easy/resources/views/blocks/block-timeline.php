@@ -6,7 +6,7 @@
 <!-- Timeline Module -->
     <section class="section-timeline">
       <div class="container">
-        <h1 class="section-title"><?php echo $section_title; ?></h1>
+        <h1 class="section-title relative"><?php echo $section_title; ?></h1>
         <div class="timeline-body relative">
 
         <?php
@@ -56,8 +56,8 @@
                         <?php } ?>
                         ">
                         <div class="timeline__img flex relative z-10 place-content-center rounded-[40px] aspect-square overflow-hidden">
-                            <span class="timeline__num absolute z-10 text-white font-bold text-[100px] md:text-[200px] self-center"><?php echo $index; ?></span>
-                            <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/20"></div>
+                            <span class="timeline__num absolute z-10 text-white font-bold text-[100px] md:text-[200px] self-center opacity-0"><?php echo $index; ?></span>
+                            <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-grey-dark/50"></div>
                             <img class="" src="<?php echo $img_url;?>"/>
                         </div>
                         <div class="timeline__img-shade absolute left-0 right-0 top-[35px] sm:top-[50px] md:top-[80px] aspect-square bg-grey rounded-[30px] sm:round-[30px] md:rounded-[40px] m-[20px] sm:m-[30px] md:m-[40px]"></div>
