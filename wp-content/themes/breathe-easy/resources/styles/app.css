@@ -214,6 +214,11 @@
         text-[25px]
         font-light
         leading-[1.2];
+
+        p {
+          @apply
+          mb-[22px];
+        }
     }
 
     .quote {
@@ -259,6 +264,12 @@
             bg-no-repeat
             bg-center;
         }
+    }
+
+    .logged-in .header {
+      @apply
+      top-0
+      sm:top-[32px];
     }
     
     nav.nav-primary {
@@ -482,8 +493,7 @@
 
   .quote-content {
     h2 {
-      @apply
-      text-white
+      @apply      
       text-[22px]
       md:text-[30px]
       lg:text-[40px]

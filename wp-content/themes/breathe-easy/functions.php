@@ -211,6 +211,16 @@ function my_acf_init() {
             'icon'              => 'editor-paragraph',
             'keywords'          => array( 'paragraph' ),
         ));
+
+        acf_register_block(array(
+            'name'              => 'description',
+            'title'             => __('Description'),
+            'description'       => __('A custom description block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'custom',
+            'icon'              => 'editor-aligncenter',
+            'keywords'          => array( 'description' ),
+        ));
     }
 }
 
