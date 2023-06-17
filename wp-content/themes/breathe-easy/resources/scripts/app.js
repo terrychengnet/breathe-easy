@@ -131,50 +131,61 @@ domReady(async () => {
   }
   faqModule_module();
 
-  // GSAP
+  // GSAP registration
   gsap.registerPlugin(ScrollTrigger);
-  // Hero
-  gsap.to(".hero-pre-txt", {
-    y: -40,
-    opacity: 1,
-    duration: 0.7,
-    delay: 0.3,
-    scrollTrigger: { trigger: ".hero", start: "top center" }
-  });
-  gsap.to(".hero-title", {
-    y: -40,
-    opacity: 1,
-    duration: 0.7,
-    delay: 0.6,
-    scrollTrigger: { trigger: ".hero", start: "top center" }
-  });
-  gsap.to(".hero-content", {
-    scrollTrigger: {
-      scrub: true
-    }, 
-    y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
-    ease: "none"
-  });
+  
+  // Hero animation
+  let hero_animation = function() {
+    if ($('.home-hero').length > 0) {
+      gsap.to(".hero-pre-txt", {
+        y: -40,
+        opacity: 1,
+        duration: 0.7,
+        delay: 0.3,
+        scrollTrigger: { trigger: ".hero", start: "top center" }
+      });
+      gsap.to(".hero-title", {
+        y: -40,
+        opacity: 1,
+        duration: 0.7,
+        delay: 0.6,
+        scrollTrigger: { trigger: ".hero", start: "top center" }
+      });
+      gsap.to(".hero-content", {
+        scrollTrigger: {
+          scrub: true
+        }, 
+        y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+        ease: "none"
+      });
+    }
+  }
+  hero_animation();
 
-  //Timeline
-  const t_items = gsap.utils.toArray(".timeline__item");
+  //Timeline Animation
+  let timeline_animation = function() {
+    if ($('.section-timeline').length > 0) {
+      const t_items = gsap.utils.toArray(".timeline__item");
 
-  t_items.forEach((t_item, i) => {
-    const t_item_card = t_item.querySelector(".timeline__img-shade");
-    const t_item_num = t_item.querySelector(".timeline__num");
+      t_items.forEach((t_item, i) => {
+        const t_item_card = t_item.querySelector(".timeline__img-shade");
+        const t_item_num = t_item.querySelector(".timeline__num");
 
-    gsap.from(t_item_card, {
-      yPercent: 20,
-      duration: 0.9,
-      ease: "power2.inOut",
-      scrollTrigger: { trigger: t_item, scrub: true }
-    });
+        gsap.from(t_item_card, {
+          yPercent: 20,
+          duration: 0.9,
+          ease: "power2.inOut",
+          scrollTrigger: { trigger: t_item, scrub: true }
+        });
 
-    gsap.to(t_item_num, {
-      opacity: 1,
-      scrollTrigger: { trigger: t_item, start: "top center" }
-    });
-  });
+        gsap.to(t_item_num, {
+          opacity: 1,
+          scrollTrigger: { trigger: t_item, start: "top center" }
+        });
+      });
+    }
+  }
+  timeline_animation();
 
 });
 

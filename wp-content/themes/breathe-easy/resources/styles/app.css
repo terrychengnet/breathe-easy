@@ -495,6 +495,11 @@
     }
   }
 
+  .service-head-box__wrap:hover .service-head-box__bg {
+    @apply scale-150;
+  }
+  
+
   /* Glass CSS START */
   /* Footer START*/
   .footer-cols {
@@ -525,7 +530,8 @@
       a {
         @apply
         text-[25px]
-        font-bold;
+        font-bold
+        hover:text-blue-light;
       }
 
       &.menu-item-has-children {
