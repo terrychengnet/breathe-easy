@@ -1,10 +1,6 @@
 <?php
-$quote = get_field('quote');
 $layout = get_field('layout');
-
-// if( get_field('color') == 'red' ) {
-
-// }
+$quote = get_field('quote');
 ?>
 
 <section class="section-quote">

@@ -1,12 +1,14 @@
 <?php
-    $section_title = get_field('block_title');
+    $tl_title = get_field('title');
     $timeline_items = get_field('timeline');
 ?>
 
 <!-- Timeline Module -->
     <section class="section-timeline">
       <div class="container">
-        <h1 class="section-title relative"><?php echo $section_title; ?></h1>
+        <?php if($tl_title): ?>
+            <h1 class="section-title relative"><?php echo $tl_title; ?></h1>
+        <?php endif; ?>
         <div class="timeline-body relative">
 
         <?php
@@ -44,7 +46,9 @@
                         <p class="description mb-[25px]">
                             <?php echo $content;?>
                         </p>
-                        <a class="btn" href="<?php echo $link; ?>">Read More</a>
+                        <?php if($link): ?>
+                            <a class="btn" href="<?php echo $link; ?>">Read More</a>
+                        <?php endif; ?>
                         </div>
                         <div class="timeline__img-wrap block relative mb-5 sm:mb-0
                         col-span-4

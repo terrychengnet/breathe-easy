@@ -1,5 +1,4 @@
-<!-- FAQ -->
-<?php if (get_field('faq')): ?>  
+<?php if (get_field('faq')): ?>
 <section id="faq_accordion" class="section-faq">
     <div class="container container-narrow text-grey">
         <h3 class="text-2xl font-bold text-center mt-[32px]">LEARN MORE ABOUT OUR SERVICES</h3>
