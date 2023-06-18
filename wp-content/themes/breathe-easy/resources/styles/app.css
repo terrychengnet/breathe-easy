@@ -246,7 +246,17 @@
 
             .nav-primary .menu-item a {
                 @apply
-                hover:text-blue-light; 
+                hover:text-blue-light;
+            }
+
+            .nav-primary .current_page_item a {
+              @apply
+              text-blue-light;
+            }
+
+            &.current_page_item a {
+              @apply
+              text-blue-main;
             }
 
             .btn-contact {
@@ -278,6 +288,11 @@
             mr-[25px]
             ml-[25px];
 
+            &.current_page_item a {
+              @apply
+              text-blue-main;
+            }
+
             a {
                 @apply 
                 text-white 
@@ -296,6 +311,11 @@
             @apply
             border-b-[1px]
             border-blue-second;
+
+            &.current-menu-item a {
+              @apply
+              text-blue-light;
+            }
 
             a {
                 @apply
