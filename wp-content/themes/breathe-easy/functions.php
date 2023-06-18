@@ -221,6 +221,16 @@ function my_acf_init() {
             'icon'              => 'editor-aligncenter',
             'keywords'          => array( 'description' ),
         ));
+
+        acf_register_block(array(
+            'name'              => 'full-width-banner',
+            'title'             => __('Full-width Banner'),
+            'description'       => __('A custom full-width banner block.'),
+            'render_callback'   => 'my_acf_block_render_callback',
+            'category'          => 'custom',
+            'icon'              => 'align-full-width',
+            'keywords'          => array( 'full', 'width', 'banner' ),
+        ));
     }
 }
 

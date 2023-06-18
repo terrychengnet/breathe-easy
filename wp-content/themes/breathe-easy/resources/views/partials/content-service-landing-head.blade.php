@@ -43,6 +43,6 @@ $contact_us_link = get_field('contact_us_link');
         <h1 class="section-headering text-blue-light mb-[14px]">Free Consultation</h1>
         <p class="description text-blue-light mb-[44px]">Not sure if you need Aircon cleaning? <br class=""/>
             Book a consultation with our experts to learn more.</p>
-            <a class="btn" href="{{ $contact_us_link }}">Contact Us</a>
+        <a class="btn" href="{{ $contact_us_link }}">Contact Us</a>
     </div>
 </section>
