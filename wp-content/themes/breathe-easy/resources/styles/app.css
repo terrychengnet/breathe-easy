@@ -506,7 +506,7 @@
   }
 
   .service-head-box__wrap:hover .service-head-box__bg {
-    @apply scale-150;
+    @apply scale-[120%];
   }
   
 
