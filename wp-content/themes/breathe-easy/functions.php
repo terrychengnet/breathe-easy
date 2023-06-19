@@ -231,6 +231,18 @@ function my_acf_init() {
             'icon'              => 'align-full-width',
             'keywords'          => array( 'full', 'width', 'banner' ),
         ));
+
+        acf_register_block(
+            array(
+                'name' => 'latest-blog-posts',
+                'title' => __('Latest Blog Posts'),
+                'description' => __('A custom Latest Blog Posts block.'),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category' => 'custom',
+                'icon' => 'grid-view',
+                'keywords' => array('latest-blog-posts'),
+            )
+        );
     }
 }
 
