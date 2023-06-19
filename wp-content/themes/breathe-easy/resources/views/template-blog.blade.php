@@ -25,7 +25,7 @@
                     <div class="grid animate-post grid-cols-12 gap-1 mb-[45px]">
                         <div class="col-span-12 lg:col-span-6">
                             <a href="{{ get_permalink() }}">
-                                {!! get_the_post_thumbnail(get_the_ID(), 'medium', ['class' => 'w-full h-auto aspect-video object-cover rounded-[25px]1']) !!}
+                                {!! get_the_post_thumbnail(get_the_ID(), 'medium', ['class' => 'w-full h-auto aspect-video object-cover rounded-[25px]']) !!}
                             </a>
                         </div>
                         <div class="pt-[40px] pb-[40px] md:p-10 lg:col-start-8 col-span-12 lg:col-span-5">
