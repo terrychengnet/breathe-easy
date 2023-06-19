@@ -35,7 +35,7 @@
   </div>
 @else
   <div class="relative flex bg-blue-main border-b-[15px] border-blue-second">
-    <div class="container pt-[150px] md:pt-[200px]">
+    <div class="container pt-[100px] md:pt-[200px]">
       <div class="grid grid-cols-1 lg:grid-cols-3">
         <h1 class="col-span-1 lg:col-span-2 page-title uppercase text-blue-light mb-[40px] lg:mb-[10px]">{{ the_title() }}</h1>
 

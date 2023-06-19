@@ -593,7 +593,8 @@
     font-bold 
     text-blue-main
     mr-2 
-    last:mr-0;
+    last:mr-0
+    hover:text-blue-light;
   }
   /* Footer END*/
   /* Glass CSS END */

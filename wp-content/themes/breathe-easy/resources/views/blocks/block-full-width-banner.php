@@ -19,7 +19,7 @@
                 <img class="w-full" src="<?php echo $thumbnail_img['url']; ?>"/>
             </div>
             <!-- content -->
-            <div class="relative z-10 md:col-start-4 col-span-12 md:col-span-8 rounded-[40px] bg-blue-second grid 
+            <div class="relative z-10 md:col-start-4 col-span-12 md:col-span-8 rounded-[40px] bg-blue-main grid 
             p-[40px] 
             lg:p-[80px] 
             pt-[80px]
@@ -28,7 +28,9 @@
             ">
                 <div class="md:w-3/5 justify-self-end">
                     <p class="quote mb-[40px]"><?php echo $paragraph; ?></p>
-                    <a class="btn" href="<?php echo $link; ?>">Read More</a>
+                    <?php if($link):?>
+                        <a class="btn" href="<?php echo $link; ?>">Read More</a>
+                    <?php endif;?>
                 </div>
             </div>
         </div>
