@@ -43,7 +43,7 @@ $formID = get_field('form_id');
               col-span-12
               lg:col-span-5
               lg:col-start-7">
-        <?php echo do_shortcode('[forminator_form id="197"]'); ?>
+        <?php echo do_shortcode('[forminator_form id="' . $formID . '"]'); ?>
         <!--         <form class="contact-form">
           <input class="form-input"
                  type="text"
