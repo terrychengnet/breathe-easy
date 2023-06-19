@@ -6,7 +6,7 @@
 @include('partials.page-header')
 
 @section('content')
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-[40px] md:py-[100px]">
 
         @php
             $args = [
@@ -17,24 +17,27 @@
         @endphp
 
         @if ($query->have_posts())
-            <div class="grid grid-cols-1 gap-6">
+            <div class="posts-wrap">
                 @while ($query->have_posts())
                     @php
                         $query->the_post();
                     @endphp
-                    <div class="flex flex-col sm:flex-row animate-post">
-                        <div class="w-full sm:w-1/2">
+                    <div class="grid animate-post grid-cols-12 gap-1 mb-[45px]">
+                        <div class="col-span-12 lg:col-span-6">
                             <a href="{{ get_permalink() }}">
-                                {!! get_the_post_thumbnail(get_the_ID(), 'medium', ['class' => 'w-full h-auto rounded-lg']) !!}
+                                {!! get_the_post_thumbnail(get_the_ID(), 'medium', ['class' => 'w-full h-auto aspect-video object-cover rounded-[25px]1']) !!}
                             </a>
                         </div>
-                        <div class="flex flex-col justify-center p-10 w-full gap-7 sm:w-1/2">
-                            <h2 class="text-6xl sm:text-4xl font-bold mb-2"><a
-                                    href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
-                            <div class="text-gray-800 text-lg">{!! wp_trim_words(get_the_content(), 20, '...') !!}</div>
-                            <a href="{{ get_permalink() }}"
-                                class="inline-block text-lg w-fit mt-4 px-10 py-5 rounded-full text-white bg-blue-light hover:bg-blue-second">Read
-                                More</a>
+                        <div class="pt-[40px] pb-[40px] md:p-10 lg:col-start-8 col-span-12 lg:col-span-5">
+                            <h2 class="section-heading mb-[30px]"><a
+                                    href="{{ get_permalink() }}">{{ get_the_title() }}</a>
+                                </h2>
+                            <div class="description mb-[40px]">
+                                {{ get_the_excerpt() }}
+                            </div>
+                            <div class="btn-wrap">
+                                <a class="btn" href="{{ get_permalink() }}">Read More</a>
+                            </div>
                         </div>
                     </div>
                 @endwhile
