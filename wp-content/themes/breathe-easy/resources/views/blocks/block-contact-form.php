@@ -43,38 +43,7 @@ $formID = get_field('form_id');
               col-span-12
               lg:col-span-5
               lg:col-start-7">
-        <?php echo do_shortcode('[forminator_form id="' . $formID . '"]'); ?>
-        <!--         <form class="contact-form">
-          <input class="form-input"
-                 type="text"
-                 name="name"
-                 placeholder="Name*" />
-          <input class="form-input"
-                 type="text"
-                 name="phone"
-                 placeholder="Phone number*" />
-          <input class="form-input"
-                 type="email"
-                 name="email"
-                 placeholder="E-mail*" />
-          <textarea class="form-input
-              min-h-[250px]
-              text-[25px]
-              border-t-[2px]
-              border-r-[2px]
-              border-l-[2px]
-              py-[15px]
-              px-[20px]
-              my-[50px]
-              rounded-[35px]
-              "
-                    name="form-message"
-                    form="usrform"
-                    placeholder="Message"></textarea>
-          <input class="btn btn-submit form-submit"
-                 type="submit"
-                 value="Send">
-        </form> -->
+        <?php echo do_shortcode($formID); ?>
       </div>
     </div>
   </div>
