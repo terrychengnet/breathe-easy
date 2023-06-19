@@ -3,11 +3,13 @@ $title = get_field('title');
 $number_of_posts_to_display = get_field('number_of_posts_to_display');
 ?>
 
-<section class="section-latest-blog-post">
+<section class="section-latest-blog-post py-0">
     <div class="container mx-auto py-8">
-        <h3>
-            <?php echo $title ?>
-        </h3>
+        
+        <?php if($title): ?>
+            <h1 class="section-title relative mt-0 mb-[60px]"><?php echo $title; ?></h1>
+        <?php endif; ?>
+
         <?php
         $query = new WP_Query([
             'post_type' => 'post',
@@ -41,7 +43,9 @@ $number_of_posts_to_display = get_field('number_of_posts_to_display');
 
             echo '</div>';
             wp_reset_postdata();
-        endif;
-        ?>
+        endif; ?>
+        <div class="text-center mt-[30px]">
+            <a class="btn" href="/contact-us">Read More</a>
+        </div>
     </div>
 </section>
