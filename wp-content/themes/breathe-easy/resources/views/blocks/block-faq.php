@@ -1,4 +1,11 @@
-<?php if (get_field('faq')): ?>
+<?php
+if( !empty( $block['data']['_is_preview'] ) ) { ?>
+    <figure>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/block-preview-img/preview-faq.png" alt="Preview of what the Accordion custom block appears minimized">
+    </figure>
+<?php } else { ?>
+    
+  <?php if (get_field('faq')): ?>
 <section id="faq_accordion" class="section-faq">
     <div class="container container-narrow text-grey">
         <h3 class="text-2xl font-bold text-center mt-[32px]">LEARN MORE ABOUT OUR SERVICES</h3>
@@ -45,3 +52,5 @@
     </div>
   </section>
 <?php endif; ?>
+
+<?php } ?>

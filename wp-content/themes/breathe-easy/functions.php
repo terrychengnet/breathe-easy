@@ -150,6 +150,14 @@ function my_acf_init() {
             'category'          => 'custom',
             'icon'              => 'format-chat',
             'keywords'          => array( 'faq', 'question' ),
+            'example'  => array(
+                'attributes' => array(
+                'mode' => 'preview',
+                'data' => array(
+                    '_is_preview'   => 'true'
+                   )
+               )
+           ),
         ));
 
         acf_register_block(array(
