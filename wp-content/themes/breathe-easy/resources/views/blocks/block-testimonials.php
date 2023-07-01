@@ -43,7 +43,7 @@
                   lg:transform-none
                   lg:translate-x-0">
                   <img class="block aspect-square rounded-[50%] w-[180px] lg:w-[230px] mb-[20px]" src="<?php echo $photoUrl;?>"/>
-                  <p class="text-black font-bold 
+                  <p class="text-blue-main font-bold 
                   hidden
                   lg:block
                   text-[30px]

@@ -28,8 +28,8 @@
                                 {!! get_the_post_thumbnail(get_the_ID(), 'medium', ['class' => 'w-full h-auto aspect-video object-cover rounded-[25px]']) !!}
                             </a>
                         </div>
-                        <div class="pt-[40px] pb-[40px] md:p-10 lg:col-start-8 col-span-12 lg:col-span-5">
-                            <h2 class="section-heading mb-[30px]"><a
+                        <div class="pt-[40px] pb-[40px] md:p-10 lg:col-start-7 col-span-12 lg:col-span-6">
+                            <h2 class="post-heading mb-[30px]"><a
                                     href="{{ get_permalink() }}">{{ get_the_title() }}</a>
                                 </h2>
                             <div class="description mb-[40px]">

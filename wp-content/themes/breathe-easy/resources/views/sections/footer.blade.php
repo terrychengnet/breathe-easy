@@ -3,6 +3,9 @@
     $phone = $info['phone_number'];
     $whatsapp = $info['whatsapp_number'];
     $email = $info['email'];
+    $working_days = $info['working_days'];
+    $working_hours = $info['working_hours'];
+    $closed_days = $info['closed_days'];
 
     $social = get_field('social_account', 'option');
     $facebook = $social['facebook'];
@@ -23,9 +26,20 @@
             <div class="footer-cols col-span-12 sm:col-span-5 lg:col-span-3 working-hours">
                 <h3 class="mb-4">Working Hours</h3>
                 <div class="grid grid-cols-12">
-                    <span class="block col-span-6 sm:col-span-12 mb-5 text-[25px] md:text-[30px] leading-[1.3]">Mon-Fri:<br />
-                        10AM - 6PM</span>
-                    <span class="block col-span-6 sm:col-span-12 text-[25px] md:text-[30px] leading-[1.3]">Sat-Sun:<br /> Closed</span>
+                    <span class="block col-span-6 sm:col-span-12 mb-5 text-[25px] md:text-[30px] leading-[1.3]">
+                        @if($working_days)
+                            {{ $working_days }}<br />
+                        @endif
+                        @if($working_hours)
+                            {{ $working_hours }}
+                        @endif
+                    </span>
+                    <span class="block col-span-6 sm:col-span-12 text-[25px] md:text-[30px] leading-[1.3]">
+                        @if($closed_days)
+                            {{ $closed_days}}<br />
+                            Closed
+                        @endif
+                    </span>
                 </div>
 
                 <h3 class="mt-8 mb-3">Follow US</h3>
