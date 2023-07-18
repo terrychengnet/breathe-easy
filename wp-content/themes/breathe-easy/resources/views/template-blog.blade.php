@@ -47,7 +47,7 @@
             <p>No blog posts found.</p>
         @endif
 
-        <div class="mt-8">
+        <div class="blog-pagination mt-8 flex justify-center">
             {!! paginate_links(['total' => $query->max_num_pages]) !!}
         </div>
     </div>

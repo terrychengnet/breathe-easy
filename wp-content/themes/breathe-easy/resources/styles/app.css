@@ -610,4 +610,18 @@
   }
   /* Footer END*/
   /* Glass CSS END */
+
+  .blog-pagination {
+    .page-numbers {
+      @apply
+      font-bold
+      mx-[5px]
+      text-blue-light;
+
+      &.current {
+        @apply
+        text-black;
+      }
+    }
+  }
 }

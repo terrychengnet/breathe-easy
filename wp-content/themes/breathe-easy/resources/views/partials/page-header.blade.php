@@ -45,16 +45,22 @@
               <a class="text-blue-light font-bold" href="{{ home_url('/') }}">Home</a>
             </span>
             <span class="px-[5px] text-blue-light font-bold">/</span>
-             
-            {{-- @if(is_page() && $post->post_parent)
+            {{-- If has parent --}}
+            @if(is_page() && has_post_parent())
               <span>
                 <a class="text-blue-light font-bold" href="{{ get_permalink( $post->post_parent ) }}">
                   {{ get_the_title( $post->post_parent ) }}
                 </a>
               </span>
               <span class="px-[5px] text-blue-light font-bold">/</span>
-            @endif --}}
-
+            @endif
+            {{-- If is a blog page --}}
+            @if(is_single())
+              <span>
+                <a class="text-blue-light font-bold" href="{{ home_url('/blog') }}">Blog</a>
+              </span>
+              <span class="px-[5px] text-blue-light font-bold">/</span>
+            @endif
             <span class="text-blue-second font-bold"> {{ the_title() }} </span>
           </div>
         @endif

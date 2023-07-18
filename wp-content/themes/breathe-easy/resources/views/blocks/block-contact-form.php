@@ -1,4 +1,10 @@
 <!-- Contact Form Module -->
+<?php if( !empty( $block['data']['_is_preview'] ) ) { ?>
+    <figure>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/block-preview-img/preview-contact-form.png" alt="Preview of what the block appears minimized">
+    </figure>
+<?php } else { ?>
+
 <?php
 $info = get_field('contact_info', 'option');
 $whatsapp = $info['whatsapp_number'];
@@ -48,3 +54,5 @@ $formID = get_field('form_id');
     </div>
   </div>
 </section>
+
+<?php } ?>

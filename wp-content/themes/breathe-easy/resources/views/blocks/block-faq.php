@@ -1,7 +1,7 @@
-<?php
-if( !empty( $block['data']['_is_preview'] ) ) { ?>
+<!-- FAQ Module -->
+<?php if( !empty( $block['data']['_is_preview'] ) ) { ?>
     <figure>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/block-preview-img/preview-faq.png" alt="Preview of what the Accordion custom block appears minimized">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/block-preview-img/preview-faq.png" alt="Preview of what the block appears minimized">
     </figure>
 <?php } else { ?>
     

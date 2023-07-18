@@ -168,6 +168,14 @@ function my_acf_init() {
             'category'          => 'custom',
             'icon'              => 'editor-table',
             'keywords'          => array( 'contact', 'contact form' ),
+            'example'  => array(
+                'attributes' => array(
+                'mode' => 'preview',
+                'data' => array(
+                    '_is_preview'   => 'true'
+                   )
+               )
+           ),
         ));
 
         acf_register_block(array(
