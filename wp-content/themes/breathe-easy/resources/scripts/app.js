@@ -173,7 +173,7 @@ domReady(async () => {
         const t_item_num = t_item.querySelector(".timeline__num");
 
         gsap.from(t_item_card, {
-          yPercent: 20,
+          yPercent: 10,
           duration: 0.9,
           ease: "power2.inOut",
           scrollTrigger: { trigger: t_item, scrub: true }

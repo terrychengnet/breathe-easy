@@ -294,8 +294,9 @@
     nav.nav-primary {
         .menu-item {
             @apply 
-            mr-[25px]
-            ml-[25px];
+            relative
+            px-[25px]
+            py-[20px];
 
             &.current_page_item a {
               @apply
@@ -311,6 +312,33 @@
                 ease-in 
                 hover:text-blue-main
                 hover:ease-in;
+            }
+
+            .sub-menu {
+              @apply
+              hidden
+              absolute
+              top-[60px]
+              left-0
+              py-[10px]
+              min-w-[180px]
+              bg-blue-second
+              rounded-[20px];
+
+              > li {
+                @apply
+                mx-0
+                my-[10px]
+                py-[5px]
+                leading-[1.3];
+              }
+            }
+
+            &:hover {
+              .sub-menu {
+                @apply
+                block;
+              }
             }
         }
     }
@@ -339,6 +367,23 @@
                     @apply
                     text-blue-light;
                 }
+            }
+
+            .sub-menu {
+              @apply
+              pl-[18px]
+              pb-[10px];
+
+              > li {
+                @apply
+                border-none;
+
+                a {
+                  @apply
+                  py-[5px]
+                  text-[15px];
+                }
+              }
             }
         }
     }
