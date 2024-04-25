@@ -34,32 +34,32 @@
     <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-black/20"></div>
   </div>
 @else
-  <div class="relative flex bg-blue-main border-b-[15px] border-blue-second">
+  <div class="relative flex bg-blue-main border-b-[15px] border-blue-light">
     <div class="container pt-[100px] md:pt-[200px]">
       <div class="grid grid-cols-1 lg:grid-cols-3">
-        <h1 class="col-span-1 lg:col-span-2 page-title uppercase text-blue-light mb-[40px] lg:mb-[10px]">{{ the_title() }}</h1>
+        <h1 class="col-span-1 lg:col-span-2 page-title uppercase text-white mb-[40px] lg:mb-[10px]">{{ the_title() }}</h1>
 
         @if(!is_404())
           <div class="breadcrumbs col-span-1 flex mb-[20px] place-items-end lg:place-content-end">
             <span>
-              <a class="text-blue-light font-bold" href="{{ home_url('/') }}">Home</a>
+              <a class="text-blue-second font-bold" href="{{ home_url('/') }}">Home</a>
             </span>
-            <span class="px-[5px] text-blue-light font-bold">/</span>
+            <span class="px-[5px] text-blue-second font-bold">/</span>
             {{-- If has parent --}}
             @if(is_page() && has_post_parent())
               <span>
-                <a class="text-blue-light font-bold" href="{{ get_permalink( $post->post_parent ) }}">
+                <a class="text-blue-second font-bold" href="{{ get_permalink( $post->post_parent ) }}">
                   {{ get_the_title( $post->post_parent ) }}
                 </a>
               </span>
-              <span class="px-[5px] text-blue-light font-bold">/</span>
+              <span class="px-[5px] text-blue-second font-bold">/</span>
             @endif
             {{-- If is a blog page --}}
             @if(is_single())
               <span>
-                <a class="text-blue-light font-bold" href="{{ home_url('/blog') }}">Blog</a>
+                <a class="text-blue-second font-bold" href="{{ home_url('/blog') }}">Blog</a>
               </span>
-              <span class="px-[5px] text-blue-light font-bold">/</span>
+              <span class="px-[5px] text-blue-second font-bold">/</span>
             @endif
             <span class="text-blue-second font-bold"> {{ the_title() }} </span>
           </div>

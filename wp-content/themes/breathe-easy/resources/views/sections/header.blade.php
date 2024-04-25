@@ -5,6 +5,31 @@
           <nav class="nav-primary text-blue-main hidden lg:block" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav flex', 'echo' => false]) !!}
           </nav>
+          <div class="lang-switch hidden sm:flex border-l-[2px] border-white pr-[20px]">
+            <span class="lang-icon hidden sm:block pl-[10px] lg:pl-[15px]">
+              <i class="fa-solid fa-globe text-white"></i>
+            </span>
+
+            @php 
+            $langs = apply_filters( 'wpml_active_languages', NULL, array ('skip_missing' => 0 ) ) ;
+            foreach ($langs as $lang) {
+              // echo '<pre>';
+              // print_r($lang);
+              // echo '</pre>';
+                if ($lang['active'] === 0) {
+                    $lang_name = '';
+                    if ($lang['code'] === 'en') {
+                      $lang_name = 'EN';
+                    }
+
+                    if ($lang['code'] === 'zh-hk') {
+                      $lang_name = '中文';
+                    }
+                    echo '<a class="text-white hover:text-blue-main ml-[10px] whitespace-nowrap" href="' . $lang['url'] . '">' . $lang_name . '</a>';
+                }
+            }
+            @endphp            
+          </div>
         @endif
       <div class="header-contact">
         <a class="btn btn-contact" href="/contact-us">Contact Us</a>
@@ -20,13 +45,44 @@
   <div class="mobile-menu hidden bg-blue-main/95">
     <div class="container">
       @if (has_nav_menu('primary_navigation'))
-        <div class="mobile-menu-wrap py-[40px]">
+        <div class="mobile-menu-wrap pt-[40px] pb-[25px]">
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation', 
             'menu_class' => 'mobile-menu-list', 
             'echo' => false]) !!}
         </div>
       @endif
+
+      {{--  --}}
+      <div class="lang-switch flex sm:hidden pb-[20px]">
+        <span class="lang-icon mr-[10px]">
+          <i class="fa-solid fa-globe text-blue-second"></i>
+        </span>
+
+        @php 
+        $langs = apply_filters( 'wpml_active_languages', NULL, array ('skip_missing' => 0 ) ) ;
+        foreach ($langs as $lang) {
+          // echo '<pre>';
+          // print_r($lang);
+          // echo '</pre>';
+          if ($lang['active'] === 0) {
+                $lang_name = '';
+                if ($lang['code'] === 'en') {
+                  $lang_name = 'EN';
+                }
+
+                if ($lang['code'] === 'zh-hk') {
+                  $lang_name = '中文';
+                }
+
+                if ($lang['active'] === 0) {
+                  echo '<a class="text-white hover:text-blue-main whitespace-nowrap" href="' . $lang['url'] . '">' . $lang_name . '</a>';
+                }
+              }
+        }
+        @endphp            
+      </div>
+      {{--  --}}
     </div>
   </div>
 </header>

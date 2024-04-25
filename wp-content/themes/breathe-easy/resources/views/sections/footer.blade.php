@@ -71,7 +71,7 @@
                         </div>
                         <div class="lg:mt-7 inline-flex items-center">
                             <i class="fa-regular fa-envelope mr-3 w-8 text-[30px]"></i>
-                            <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-light">{{ $email }}</a>
+                            <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-second">{{ $email }}</a>
                         </div>
                     </div>
                 </div>

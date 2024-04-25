@@ -1250,7 +1250,7 @@
         {
           "name": "Blue-main",
           "slug": "blue-main",
-          "color": "#154487"
+          "color": "#4db2ec"
         },
         {
           "name": "Blue-second",
@@ -1261,6 +1261,16 @@
           "name": "Blue-light",
           "slug": "blue-light",
           "color": "#59bcee"
+        },
+        {
+          "name": "Blue-solid",
+          "slug": "blue-solid",
+          "color": "#154487"
+        },
+        {
+          "name": "Blue-btn",
+          "slug": "blue-btn",
+          "color": "#00a2ff"
         },
         {
           "name": "Grey",

@@ -40,9 +40,9 @@ $contact_us_link = get_field('contact_us_link');
 </section>
 <section class="service-head-contact bg-blue-main">
     <div class="container container-narrow text-center pb-[30px]">
-        <h1 class="section-headering text-blue-light mb-[14px]">Free Consultation</h1>
-        <p class="description text-blue-light mb-[44px]">Not sure if you need Aircon cleaning? <br class=""/>
+        <h1 class="section-headering text-white mb-[14px]">Free Consultation</h1>
+        <p class="description text-white mb-[44px]">Not sure if you need Aircon cleaning? <br class=""/>
             Book a consultation with our experts to learn more.</p>
-        <a class="btn" href="{{ $contact_us_link }}">Contact Us</a>
+        <a class="btn bg-white text-blue-main" href="{{ $contact_us_link }}">Contact Us</a>
     </div>
 </section>

@@ -9,9 +9,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-main':    '#154487',
+        // 'blue-main':    '#154487',
+        'blue-main':    '#4db2ec',
         'blue-second':  '#1481c3',
         'blue-light':   '#59bcee',
+        'blue-solid':   '#154487',
+        'blue-btn':     '#00a2ff',
         'white':        '#ffffff',
         'black':        '#000000',
         'grey':         '#d9d9d9',
