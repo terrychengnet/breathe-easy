@@ -14,7 +14,6 @@ module.exports = {
         'blue-second':  '#1481c3',
         'blue-light':   '#59bcee',
         'blue-solid':   '#154487',
-        'blue-btn':     '#00a2ff',
         'white':        '#ffffff',
         'black':        '#000000',
         'grey':         '#d9d9d9',
