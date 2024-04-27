@@ -177,9 +177,9 @@
         px-9
         py-[15px]
         rounded-[40px]
-        bg-blue-btn
+        bg-blue-second
         hover:text-white
-        hover:bg-blue-second
+        hover:bg-blue-light
         hover:ease-in;
 
         &.btn-contact {

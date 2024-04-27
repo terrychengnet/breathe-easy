@@ -21,7 +21,7 @@ $contact_us_link = get_field('contact_us_link');
                 <p class="description text-white">{{ $serviceA_summary }}</p>    
             </a>
         </div>
-        <div class="service-head-box__mask absolute z-10 top-0 left-0 right-0 bottom-0 bg-blue-second/75"></div>
+        <div class="service-head-box__mask absolute z-10 top-0 left-0 right-0 bottom-0 bg-grey-dark/75"></div>
         <div class="service-head-box__bg absolute z-0 w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;"
         style="background-image:url( {{ $serviceA_bg['url'] }} )"></div>
     </div>
@@ -32,7 +32,7 @@ $contact_us_link = get_field('contact_us_link');
                 <p class="description text-white">{{ $serviceB_summary }}</p>    
             </a>
         </div>
-        <div class="service-head-box__mask absolute z-10 top-0 left-0 right-0 bottom-0 bg-blue-main/75"></div>
+        <div class="service-head-box__mask absolute z-10 top-0 left-0 right-0 bottom-0 bg-grey-dark/75"></div>
         <div class="service-head-box__bg absolute z-0 w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;"
         style="background-image:url( {{ $serviceB_bg['url'] }} )"></div>
     </div>
