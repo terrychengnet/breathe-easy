@@ -76,7 +76,7 @@
                 }
 
                 if ($lang['active'] === 0) {
-                  echo '<a class="text-white hover:text-blue-main whitespace-nowrap" href="' . $lang['url'] . '">' . $lang_name . '</a>';
+                  echo '<a class="text-white hover:text-blue-second whitespace-nowrap" href="' . $lang['url'] . '">' . $lang_name . '</a>';
                 }
               }
         }

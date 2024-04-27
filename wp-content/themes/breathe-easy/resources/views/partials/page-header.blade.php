@@ -22,11 +22,11 @@
           {{  $hero_content; }}
         </h3>
       </div>
-      <div class="grid hero-more-wrap col-start-11 col-span-1 place-items-end">
+      {{-- <div class="grid hero-more-wrap col-start-11 col-span-1 place-items-end">
         <span class="cursor-pointer mb-16">
           <i id="hero-read-more" class="fa-regular fa-circle-arrow-down text-[40px] sm:text-[50px] md:text-[70px] text-white hover:text-blue-second"></i>
         </span>
-      </div>
+      </div> --}}
     </div>
     <div class="hero-bg-shape absolute z-1 left-0 right-0 bottom-0">
       <img class="w-screen" src="{{ get_template_directory_uri() }}/resources/images/hero-bg-shape.svg"/>

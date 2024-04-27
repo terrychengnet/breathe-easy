@@ -42,19 +42,19 @@ domReady(async () => {
   }
   hamburgerBtn();
 
-  let heroMoreBtn = function() {
-    const heroBtn = $('#hero-read-more');
-    if (heroBtn.length > 0) {
-      heroBtn.on('click', function(){
-        console.log('go');
-        const tar = $('section');
-        $('html, body').animate({
-          scrollTop: $(".home-hero").next(tar).offset().top - 85
-       }, 1000);
-      })
-    }
-  }
-  heroMoreBtn();
+  // let heroMoreBtn = function() {
+  //   const heroBtn = $('#hero-read-more');
+  //   if (heroBtn.length > 0) {
+  //     heroBtn.on('click', function(){
+  //       console.log('go');
+  //       const tar = $('section');
+  //       $('html, body').animate({
+  //         scrollTop: $(".home-hero").next(tar).offset().top - 85
+  //      }, 1000);
+  //     })
+  //   }
+  // }
+  // heroMoreBtn();
 
   // Timeline
   let timeline = function() {
