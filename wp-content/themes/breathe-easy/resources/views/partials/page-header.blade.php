@@ -11,9 +11,11 @@
     <div class="relative z-30 grid grid-cols-12 gap-1 content-end">
       {{-- Hero Content --}}
       <div class="hero-content col-start-2 md:col-start-2 col-span-9 md:col-span-8 text-white"  data-speed=".35">
+        @if($hero_pre_txt)
         <p class="hero-pre-txt relative uppercase text-[15px] sm:text-[20px] md:text-[25px] font-bold mb-7 opacity-0 top-[40px]">
           {{  $hero_pre_txt; }}
         </p>
+        @endif
         <h1 class="hero-title relative text-[50px] md:text-[80px] lg:text-[90px] xl:text-[110px] font-bold leading-[1] mb-8 md:mb-16
         opacity-0
         top-[40px]
