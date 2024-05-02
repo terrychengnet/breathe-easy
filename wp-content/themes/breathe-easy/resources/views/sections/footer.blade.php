@@ -14,6 +14,24 @@
     $linkedin = $social['linkedin'];
 @endphp
 
+<section class="footer-social-widget bg-blue-light py-[25px]">
+    <div class="container">
+        <div class="social-widget-container flex justify-center">
+            @if($facebook)
+                <a class="mx-[1rem] md:mx-[2rem]" href="{{ $facebook }}"><i class="fa-brands fa-facebook text-[30px] md:text-[40px] text-blue-solid hover:text-blue-second"></i></a>
+            @endif
+            @if($youtube)
+                <a class="mx-[1rem] md:mx-[2rem]" href="{{ $youtube }}"><i class="fa-brands fa-youtube text-[30px] md:text-[40px] text-blue-solid hover:text-blue-second"></i></a>
+            @endif
+            @if($instagram)
+                <a class="mx-[1rem] md:mx-[2rem]" href="{{ $instagram }}"><i class="fa-brands fa-instagram text-[30px] md:text-[40px] text-blue-solid hover:text-blue-second"></i></a>
+            @endif
+            @if($linkedin)
+                <a class="mx-[1rem] md:mx-[2rem]" href="{{ $linkedin }}"><i class="fa-brands fa-linkedin text-[30px] md:text-[40px] text-blue-solid hover:text-blue-second"></i></a>
+            @endif
+        </div>
+    </div>
+</section>
 <footer class="bg-blue-second">
     <div class="footer-wrapper container py-8 lg:py-20">
         <div class="footer-top grid grid-cols-12 text-white gap-4">
@@ -42,7 +60,7 @@
                     </span>
                 </div>
 
-                <h3 class="mt-8 mb-3">Follow US</h3>
+                {{-- <h3 class="mt-8 mb-3">Follow US</h3>
                 @if($facebook)
                     <a href="{{ $facebook }}"><i class="fa-brands fa-facebook hover:text-blue-light"></i></a>
                 @endif
@@ -54,7 +72,7 @@
                 @endif
                 @if($linkedin)
                     <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin hover:text-blue-light"></i></a>
-                @endif
+                @endif --}}
             </div>
 
             <div class="footer-cols col-span-12 lg:col-span-4 contact-us order-first lg:order-last mb-10 lg:mb-0">
