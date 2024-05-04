@@ -1,4 +1,4 @@
-<header class="header fixed z-[9999] top-0 left-0 right-0 h-[85px] bg-white/30 ease-in duration-100">
+<header class="header fixed z-[999] top-0 left-0 right-0 h-[85px] bg-white/30 ease-in duration-100">
   <div class="container h-[100%] flex justify-between items-center">
       <a class="header-logo w-[270px] h-[62px] justify-self-start mr-[20px] md:mr-[30px]" href="{{ home_url('/') }}"></a> 
         @if (has_nav_menu('primary_navigation'))

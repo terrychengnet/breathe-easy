@@ -259,6 +259,18 @@ function my_acf_init() {
                 'keywords' => array('latest-blog-posts'),
             )
         );
+
+        acf_register_block(
+            array(
+                'name' => 'video',
+                'title' => __('Video'),
+                'description' => __('A custom Video block.'),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category' => 'custom',
+                'icon' => 'grid-view',
+                'keywords' => array('video'),
+            )
+        );
     }
 }
 

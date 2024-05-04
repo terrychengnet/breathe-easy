@@ -9,9 +9,12 @@ import {
   initTE,
 } from "tw-elements";
 
-//GSAP
+// GSAP
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger.js";
+
+// Lity
+import 'lity/src/lity.js';
 
 /**
  * Application entrypoint
