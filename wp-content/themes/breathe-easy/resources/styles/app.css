@@ -640,6 +640,41 @@
   .service-head-box__wrap:hover .service-head-box__bg {
     @apply scale-[120%];
   }
+
+  /* Workflow */
+  .workflow_item {
+    &::after {
+      @apply
+      absolute
+      content-['\f0d7']
+      h-[20px]
+      right-auto
+      bottom-[-20px]
+      text-[50px] 
+      font-['bold']
+      text-blue-solid
+      transform left-1/2 -translate-x-1/2 ;
+      font-family: 'Font Awesome 6 Free';
+
+      @media (min-width: 768px) {
+          @apply
+          content-['\f0da']
+          right-[-20px]
+          bottom-auto
+          left-auto
+          top-1/2 -translate-y-1/2;
+      }
+    }
+    &:last-child {
+      @apply
+      mb-[1rem];
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  
   
 
   /* Glass CSS START */

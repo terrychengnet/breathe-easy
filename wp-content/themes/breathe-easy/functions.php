@@ -267,8 +267,20 @@ function my_acf_init() {
                 'description' => __('A custom Video block.'),
                 'render_callback' => 'my_acf_block_render_callback',
                 'category' => 'custom',
-                'icon' => 'grid-view',
+                'icon' => 'video-alt3',
                 'keywords' => array('video'),
+            )
+        );
+
+        acf_register_block(
+            array(
+                'name' => 'workflow',
+                'title' => __('Workflow'),
+                'description' => __('A custom Workflow block.'),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category' => 'custom',
+                'icon' => 'networking',
+                'keywords' => array('workflow'),
             )
         );
     }
