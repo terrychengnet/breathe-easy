@@ -283,6 +283,18 @@ function my_acf_init() {
                 'keywords' => array('workflow'),
             )
         );
+
+        acf_register_block(
+            array(
+                'name' => 'shortcode',
+                'title' => __('Shortcode'),
+                'description' => __('A custom shortcode block.'),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category' => 'custom',
+                'icon' => 'shortcode',
+                'keywords' => array('shortcode'),
+            )
+        );
     }
 }
 

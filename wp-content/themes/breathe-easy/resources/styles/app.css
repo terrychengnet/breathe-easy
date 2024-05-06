@@ -237,8 +237,8 @@
         @apply 
         block 
         text-[#b0b0b0] 
-        text-[55px]
-        md:text-[75px] 
+        text-[48px]
+        md:text-[70px] 
         text-center
         my-[40px]
         leading-[1];
