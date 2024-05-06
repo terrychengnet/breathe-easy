@@ -161,12 +161,35 @@
       }
       h1 {
         @apply
-        mb-[3.2rem];
+        text-[]
+        mb-[2.5rem];
+      }
+      h2 {
+        @apply
+        text-[3rem];
+      }
+      h3 {
+        @apply
+        text-[2.2rem];
+      }
+      h4 {
+        @apply
+        text-[1.5rem];
       }
       p {
         @apply
         text-[18px]
         mb-[22px];
+      }
+      img {
+        &.alignleft {
+          float: left;
+          margin-right: 2rem;
+        }
+        &.alignright {
+          float: right;
+          margin-left: 2rem;
+        }
       }
     }
 
