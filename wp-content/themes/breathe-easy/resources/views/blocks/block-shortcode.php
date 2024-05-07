@@ -8,6 +8,6 @@
         <?php if($title): ?>
             <h1 class="section-title mt-[15px]"><?php echo $title ?></h1>
         <?php endif; ?>
-        <?php echo $shortcode ?>
+        <?php echo do_shortcode($shortcode); ?>
     </div>
 </section>
