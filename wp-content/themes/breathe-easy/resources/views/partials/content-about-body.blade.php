@@ -39,7 +39,7 @@ $statement = get_field('statement');
                 $title = $statement_item['title'];
                 $content = $statement_item['content']; ?>
                 <div class="statement_item mb-[1.5rem] md:mb-[3rem]">
-                    <h4 class="text-blue-solid text-[1.5rem] mb-[1rem]"><?php echo $title; ?></h4>
+                    <h4 class="text-blue-solid text-[2rem] mb-[1rem]"><?php echo $title; ?></h4>
                     <p><?php echo $content; ?></p>
                 </div>
             <?php } ?>

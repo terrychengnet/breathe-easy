@@ -42,7 +42,7 @@
         <h1 class="col-span-1 lg:col-span-2 page-title uppercase text-white mb-[40px] lg:mb-[10px]">{{ the_title() }}</h1>
 
         @if(!is_404())
-          <div class="breadcrumbs col-span-1 flex mb-[20px] place-items-end lg:place-content-end">
+          <div class="breadcrumbs col-span-3 flex mb-[20px] md:place-content-end">
             <span>
               <a class="text-blue-second font-bold" href="{{ home_url('/') }}">Home</a>
             </span>
