@@ -715,9 +715,9 @@
     &.working-hours {
       @apply text-3xl font-bold;
 
-      i {
+      /* i {
         @apply text-4xl mr-2;
-      }
+      } */
     }
   }
 

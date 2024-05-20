@@ -52,25 +52,35 @@
                             {{ $working_hours }}
                         @endif
                     </span>
-                    <span class="block col-span-6 sm:col-span-12 text-[25px] md:text-[30px] leading-[1.3]">
+                    {{-- <span class="block col-span-6 sm:col-span-12 text-[25px] md:text-[30px] leading-[1.3]">
                         @if($closed_days)
                             {{ $closed_days}}<br />
                             Closed
                         @endif
-                    </span>
+                    </span> --}}
                 </div>
 
-                {{-- <h3 class="mt-8 mb-3">Follow US</h3>
-                @if($facebook)
-                    <a href="{{ $facebook }}"><i class="fa-brands fa-facebook hover:text-blue-light"></i></a>
+                <h3 class="mt-8 mb-3">Contact Us</h3>
+                @if($phone)
+                    {{-- <span class="block text-[18px]"><i class="fa-solid fa-phone"></i> {{ $phone }}</span> --}}
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-phone-flip mr-3 w-8 text-[25px]"></i>
+                        <span class="text-[25px] md:text-[16px] lg:text-[18px] xl:text-[20px]">{{ $phone }}</span>
+                    </div>
                 @endif
-                @if($youtube)
-                    <a href="{{ $youtube }}"><i class="fa-brands fa-youtube hover:text-blue-light"></i></a>
+                @if($whatsapp)
+                    <div class="flex items-center">
+                        <i class="fa-brands fa-whatsapp mr-3 w-8 text-[30px]"></i>
+                        <span class="text-[25px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-bold">{{ $whatsapp }}</span>
+                    </div>
                 @endif
-                @if($instagram)
-                    <a href="{{ $instagram }}"><i class="fa-brands fa-instagram hover:text-blue-light"></i></a>
+                @if($email)
+                <div class="flex items-center">
+                    <i class="fa-regular fa-envelope mr-3 w-8 text-[30px]"></i>
+                    <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-second">{{ $email }}</a>
+                </div>
                 @endif
-                @if($linkedin)
+                {{-- @if($linkedin)
                     <a href="{{ $linkedin }}"><i class="fa-brands fa-linkedin hover:text-blue-light"></i></a>
                 @endif --}}
             </div>
