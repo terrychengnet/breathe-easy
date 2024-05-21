@@ -33,7 +33,7 @@
         @endif
       <div class="header-contact">
         {{-- <a class="btn btn-contact" href="/contact-us">Contact Us</a> --}}
-        <a class="btn btn-contact" href="https://breathe-easy.site/sign-up/">Sign Up</a>
+        <a class="btn btn-contact" href="https://wa.me/85298877273?text=Hi%20I%27m%20interested%20in%20getting%20my%20ACs%20cleaned">CONTACT US</a>
       </div>
       <button class="menuBtn ml-[15px] block lg:hidden">
         <div class="menuBtn_lines">

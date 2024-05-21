@@ -77,7 +77,7 @@
                 @if($email)
                 <div class="flex items-center">
                     <i class="fa-regular fa-envelope mr-3 w-8 text-[30px]"></i>
-                    <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-second">{{ $email }}</a>
+                    <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-solid">{{ $email }}</a>
                 </div>
                 @endif
                 {{-- @if($linkedin)
@@ -87,8 +87,9 @@
 
             <div class="footer-cols col-span-12 lg:col-span-4 contact-us order-first lg:order-last mb-10 lg:mb-0">
                 <div class="contact-us-wrapper bg-blue-main p-8 rounded-2xl grid gap-y-1">
-                    <h3 class="mb-8">Contact Us</h3>
-                    <div class="grid gap-2
+                    <h3 class="mb-4">Want a FREE coupon and consultation?</h3>
+                    <p class="mb-8">Don’t worry, your personal information stays private and secure with us.</p>
+                    {{-- <div class="grid gap-2
                     grid-rows-1 
                     sm:grid-rows-2">
                         <div><i class="fa-solid fa-phone-flip mr-3 w-8 text-[24px]"></i>
@@ -101,7 +102,8 @@
                             <i class="fa-regular fa-envelope mr-3 w-8 text-[30px]"></i>
                             <a href="mailto:{{ $email }}" class="ml-[8px] text-2xl lg:text-xl font-bold hover:text-blue-second">{{ $email }}</a>
                         </div>
-                    </div>
+                    </div> --}}
+                    <a class="btn bg-white text-blue-main hover:bg-blue-solid" href="https://breathe-easy.site/sign-up/">SIGN UP</a>
                 </div>
             </div>
 
