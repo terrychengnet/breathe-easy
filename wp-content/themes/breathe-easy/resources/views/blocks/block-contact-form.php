@@ -6,6 +6,9 @@
 <?php } else { ?>
 
 <?php
+$title = get_field('title');
+$paragraph = get_field('paragraph');
+$paragraph_for_whatsapp = get_field('paragraph_for_whatsapp');
 $info = get_field('contact_info', 'option');
 $whatsapp = $info['whatsapp_number'];
 $formID = get_field('form_id');
@@ -15,12 +18,11 @@ $formID = get_field('form_id');
     <div class="grid grid-cols-12">
       <div class="
             col-span-12
-            lg:col-span-4
+            lg:col-span-5
             mb-[80px]
             lg:mb-0">
-        <h1 class="text-white leading-[1.1] mb-[30px] md:mb-[70px]">Get a Free Consultation Now</h1>
-        <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3]">Fill in the form and we'll give you a
-          call for a free consultation. Your personal information stays private and secure.</p>
+        <h1 class="text-white leading-[1.1] mb-[30px] md:mb-[70px] text-[50px] sm:text-[55px] md:text-[65px]"><?php echo $title;?></h1>
+        <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3]"><?php echo $paragraph;?></p>
         <div class="form-line-break relative text-center">
           <span
                 class="relative z-10 inline-block text-white text-[40px] font-bold bg-blue-main p-[25px] mx-auto">OR</span>
@@ -36,8 +38,9 @@ $formID = get_field('form_id');
               bg-white
               "></span>
         </div>
-        <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3] mb-[20px]">If you wish, you can also
-          reach us directly via whatsapp for an instant consultation.</p>
+        <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3] mb-[20px]">
+          <?php echo $paragraph_for_whatsapp;?>
+        </p>
         <p class="flex">
           <i class="fa-brands fa-whatsapp text-white text-[40px] mr-4"></i>
           <span class="text-white font-bold text-[25px] self-center">
