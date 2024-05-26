@@ -29,7 +29,7 @@
                 <div class="md:w-3/5 justify-self-end">
                     <p class="quote mb-[40px]"><?php echo $paragraph; ?></p>
                     <?php if($link):?>
-                        <a class="btn" href="<?php echo $link; ?>">Read More</a>
+                        <a class="btn btn-contact" href="<?php echo $link; ?>">Read More</a>
                     <?php endif;?>
                 </div>
             </div>

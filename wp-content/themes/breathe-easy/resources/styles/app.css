@@ -206,7 +206,8 @@
         px-9
         py-[15px]
         rounded-[40px]
-        bg-blue-second
+        /* bg-blue-second */
+        bg-blue-cta
         hover:text-white
         hover:bg-blue-light
         hover:ease-in;
@@ -263,7 +264,8 @@
     .section-title {
         @apply 
         block 
-        text-[#b0b0b0] 
+        /* text-[#b0b0b0]  */
+        text-blue-solid
         text-[48px]
         md:text-[70px] 
         text-center

@@ -30,7 +30,7 @@
             </div>
         <?php endif; ?>
         <?php if($cta_button): ?>
-            <a class="btn btn-contact mx-auto mb-[2rem]" href="<?php echo $button_link ?>">
+            <a class="btn mx-auto mb-[2rem]" href="<?php echo $button_link ?>">
                 <?php echo $button_text; ?>
             </a>
         <?php endif; ?>

@@ -31,7 +31,7 @@ $statement = get_field('statement');
 <section>
     <div class="container">
         <?php if($core_values_title): ?>
-            <h2 class="mb-[2rem] text-[#b0b0b0] "><?php echo $core_values_title; ?></h2>
+            <h2 class="section-title mb-[2rem] text-left"><?php echo $core_values_title; ?></h2>
         <?php endif; ?>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-[2rem]">
