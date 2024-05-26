@@ -12,7 +12,6 @@
             <h1 class="section-title relative"><?php echo $tl_title; ?></h1>
         <?php endif; ?>
         <div class="timeline-body relative">
-
             <?php
                 if( $timeline_items ):
                     $count = 0;

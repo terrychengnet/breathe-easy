@@ -295,6 +295,18 @@ function my_acf_init() {
                 'keywords' => array('shortcode'),
             )
         );
+
+        acf_register_block(
+            array(
+                'name' => 'cta',
+                'title' => __('CTA'),
+                'description' => __('A custom CTA block.'),
+                'render_callback' => 'my_acf_block_render_callback',
+                'category' => 'custom',
+                'icon' => 'button',
+                'keywords' => array('cta'),
+            )
+        );
     }
 }
 
