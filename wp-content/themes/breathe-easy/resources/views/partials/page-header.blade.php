@@ -35,12 +35,19 @@
     </div>
     <div class="hero-bg-mask absolute z-0 top-0 left-0 right-0 bottom-0 bg-black/20"></div>
   </div>
+
 @else
+
+@php
+  $subtitle = get_field('subtitle_field');
+@endphp
   <div class="relative flex bg-blue-main border-b-[15px] border-blue-light">
     <div class="container pt-[100px] md:pt-[200px]">
       <div class="grid grid-cols-1 lg:grid-cols-3">
         <h1 class="col-span-1 lg:col-span-2 page-title uppercase text-white mb-[40px] lg:mb-[10px]">{{ the_title() }}</h1>
-
+        @if($subtitle)
+          <p class="col-span-3 lg:col-span-2 text-white font-[30px] leading-[1.2] mb-[40px] lg:mb-[10px]">{{ $subtitle; }}</p>
+        @endif
         @if(!is_404())
           <div class="breadcrumbs col-span-3 flex mb-[20px] md:place-content-end">
             <span>
