@@ -39,12 +39,12 @@
                                 <?php } ?>
                                 ">
                                 <div class="self-center">
-                                    <h2 class="section-heading mb-[25px] text-blue-main"><?php echo $title; ?>
+                                    <h3 class="section-heading mb-[25px] text-blue-main"><?php echo $title; ?>
                                         <span class="timeline-dot hidden sm:block absolute top-[50%] 
                                         left-[-17%]
                                         md:left-0
                                         right-0"></span>
-                                    </h2>
+                                    </h3>
                                     <p class="description mb-[25px]">
                                         <?php echo $content;?>
                                     </p>

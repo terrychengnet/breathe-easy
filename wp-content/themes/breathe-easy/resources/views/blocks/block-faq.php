@@ -9,7 +9,7 @@
 <section id="faq_accordion" class="section-faq">
     <div class="container container-narrow text-grey">
         <h3 class="text-2xl font-bold text-center mt-[32px]">LEARN MORE ABOUT OUR SERVICES</h3>
-        <h1 class="section-title mt-[15px]">FAQs</h1>
+        <h2 class="section-title mt-[15px]">FAQs</h2>
 
         <?php if (have_rows('faq')): while (have_rows('faq')): (the_row()) ;?>
               <div class="bg-white border-b-4 border-sky-300">

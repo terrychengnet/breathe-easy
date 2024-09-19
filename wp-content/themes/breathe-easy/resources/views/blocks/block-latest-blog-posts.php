@@ -7,7 +7,7 @@ $num_posts = get_field('number_of_posts_to_display');
     <div class="container mx-auto py-8">
         
         <?php if($title): ?>
-            <h1 class="section-title relative mt-0 mb-[60px]"><?php echo $title; ?></h1>
+            <h2 class="section-title relative mt-0 mb-[60px]"><?php echo $title; ?></h2>
         <?php endif; ?>
 
         <?php

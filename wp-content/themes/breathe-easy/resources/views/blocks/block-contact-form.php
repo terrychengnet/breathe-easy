@@ -21,7 +21,7 @@ $formID = get_field('form_id');
             lg:col-span-5
             mb-[80px]
             lg:mb-0">
-        <h1 class="text-white leading-[1.1] mb-[30px] md:mb-[70px] text-[50px] sm:text-[55px] md:text-[65px]"><?php echo $title;?></h1>
+        <h2 class="text-white leading-[1.1] mb-[30px] md:mb-[70px] text-[50px] sm:text-[55px] md:text-[65px]"><?php echo $title;?></h2>
         <p class="text-white text-[20px] md:text-[25px] font-[300] leading-[1.3]"><?php echo $paragraph;?></p>
         <div class="form-line-break relative text-center">
           <span
