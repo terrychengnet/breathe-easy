@@ -104,51 +104,51 @@
 
     h1 {
       @apply
-      text-[50px]
-      sm:text-[65px]
-      md:text-[75px];
+      text-[40px]
+      sm:text-[55px]
+      md:text-[65px];
     }
 
     h2 {
       @apply
-      text-[45px]
-      sm:text-[60px]
-      md:text-[70px];
+      text-[35px]
+      sm:text-[45px]
+      md:text-[55px];
     }
 
     h3 {
       @apply
-      text-[35px]
-      sm:text-[50px]
-      md:text-[60px];
-    }
-
-    h4 {
-      @apply
-      text-[25px]
+      text-[30px]
       sm:text-[40px]
       md:text-[50px];
     }
 
-    h5 {
+    h4 {
       @apply
-      text-[15px]
+      text-[20px]
       sm:text-[30px]
       md:text-[40px];
+    }
+
+    h5 {
+      @apply
+      text-[16px]
+      sm:text-[20px]
+      md:text-[30px];
     }
 
     h6 {
       @apply
       text-[14px]
-      sm:text-[20px]
-      md:text-[30px];
+      sm:text-[18px]
+      md:text-[25px];
     }
 
     .page-title {
         @apply
-        text-[50px]
-        sm:text-[70px]
-        md:text-[90px]
+        text-[40px]
+        sm:text-[50px]
+        md:text-[60px]
         font-black
         leading-[1.1];
     }
