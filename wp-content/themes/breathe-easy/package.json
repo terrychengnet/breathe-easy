@@ -24,7 +24,6 @@
     "@roots/sage": "6.12.3"
   },
   "dependencies": {
-    "caniuse-lite": "^1.0.30001509",
     "gsap": "^3.12.1",
     "lity": "^2.4.1",
     "slick-carousel": "^1.8.1",

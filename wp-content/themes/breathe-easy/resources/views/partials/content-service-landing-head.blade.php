@@ -17,7 +17,7 @@ $contact_us_link = get_field('contact_us_link');
     <div class="service-head-box__wrap col-span-1 relative min-h-[400px] md:min-h-[600px] grid justify-items-end overflow-hidden">
         <div class="service-head-box relaitve z-20 flex h-full">
             <a class="grid z-20 text-center h-full content-center p-[40px] md:p-[80px] max-w-[850px]" href="{{ $serviceA_link }}">
-                <h1 class="section-heading text-white mb-[40px]">{{ $serviceA_title }}</h1>
+                <h2 class="section-heading text-white mb-[40px]">{{ $serviceA_title }}</h2>
                 <p class="description text-white">{{ $serviceA_summary }}</p>    
             </a>
         </div>
@@ -28,7 +28,7 @@ $contact_us_link = get_field('contact_us_link');
     <div class="service-head-box__wrap col-span-1 relative min-h-[400px] md:min-h-[600px] grid justify-items-start overflow-hidden">
         <div class="service-head-box relaitve z-20 flex h-full">
             <a class="grid z-20 text-center h-full content-center p-[40px] md:p-[80px] max-w-[850px]" href="{{ $serviceB_link }}">
-                <h1 class="section-heading text-white mb-[40px]">{{ $serviceB_title }}</h1>
+                <h2 class="section-heading text-white mb-[40px]">{{ $serviceB_title }}</h2>
                 <p class="description text-white">{{ $serviceB_summary }}</p>    
             </a>
         </div>
@@ -40,7 +40,7 @@ $contact_us_link = get_field('contact_us_link');
 </section>
 <section class="service-head-contact bg-blue-main">
     <div class="container container-narrow text-center pb-[30px]">
-        <h1 class="section-headering text-white mb-[14px]">Free Consultation</h1>
+        <h2 class="section-headering text-white mb-[14px]">Free Consultation</h2>
         <p class="description text-white mb-[44px]">Not sure if you need Aircon cleaning? <br class=""/>
             Book a consultation with our experts to learn more.</p>
         <a class="btn bg-white text-blue-main" href="{{ $contact_us_link }}">Contact Us</a>
