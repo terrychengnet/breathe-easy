@@ -1,6 +1,11 @@
+.editor-visual-editor {
+    background: #fff;
+}
+
 .editor-styles-wrapper {
     font-family: sans-serif;
     font-size: 16px;
-    padding: 0 15px;
-    margin: 0 auto;
+    margin: 15px auto;
+    padding: 1rem 0;
+    max-width: 768px;
 }
